@@ -1,0 +1,108 @@
+.sc-bnr--masthead {
+    text-align: center;
+    overflow: hidden
+}
+
+.sc-bnr--masthead .sc-bnr__heading {
+    font-weight: 700;
+    font-size: 1.25em;
+    margin-bottom: 16px;
+    color: #000;
+    min-height: auto
+}
+
+.sc-bnr--masthead .sc-text {
+    color: #000;
+    margin-bottom: 16px;
+    display: block
+}
+
+.sc-bnr--masthead .sc-text--large {
+    font-weight: 400
+}
+
+.sc-bnr--masthead .sc-bnr__content {
+    display: block;
+    max-width: 100%
+}
+
+.sc-bnr--masthead .sc-bnr__wrapper {
+    min-height: auto
+}
+
+.sc-bnr--masthead .sc-inline-buttons__item:last-child {
+    margin-bottom: 0
+}
+
+.sc-bnr--masthead .sc-bnr__bg-wrapper {
+    position: relative;
+    height: 270px
+}
+
+.sc-bnr--masthead .sc-bnr__bg-wrapper::after {
+    content: none
+}
+
+.sc-bnr--masthead .sc-link-icon--white {
+    color: #000;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.sc-bnr--masthead .sc-link-icon--white svg path {
+    color: #fff
+}
+
+.sc-tab-focus .sc-bnr__link:focus .sc-bnr__bg-wrapper {
+    border: 2px solid #0c77b9
+}
+
+@media (max-width:1023.98px) {
+    .sc-bnr--masthead .sc-btn--white {
+        border-color: #000;
+        color: #000
+    }
+    .sc-bnr--masthead .sc-btn--white:hover {
+        border-color: #008738;
+        color: #008738
+    }
+}
+
+@media (min-width:1024px) {
+    .sc-bnr--masthead {
+        text-align: left
+    }
+    .sc-bnr--masthead .sc-bnr__wrapper {
+        min-height: 400px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+    .sc-bnr--masthead .sc-bnr__heading {
+        font-size: 2.9375em;
+        color: #fff;
+        margin-bottom: 24px
+    }
+    .sc-bnr--masthead .sc-text {
+        color: #fff;
+        margin-bottom: 32px;
+        display: block
+    }
+    .sc-bnr--masthead .sc-bnr__content {
+        max-width: 800px
+    }
+    .sc-bnr--masthead .sc-bnr__bg-wrapper {
+        position: absolute;
+        height: 100%
+    }
+    .sc-bnr--masthead .sc-bnr__bg-wrapper::after {
+        content: ""
+    }
+    .sc-bnr--masthead .sc-link-icon--white {
+        color: #fff
+    }
+    .sc-bnr--masthead .sc-link-icon--white svg path {
+        color: #555
+    }
+}

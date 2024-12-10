@@ -1,0 +1,269 @@
+{"status":200,"requestId":"6ae4348f38f14c0ea12dbc6370c2a487","client":"stanchartafrica","id":{"tntId":"909517d014274980810871bf70472bd0.37_0","marketingCloudVisitorId":"77774041974199110050770694749969853343"},"edgeHost":"mboxedge37.tt.omtrdc.net","prefetch":{},"telemetryServerToken":"kZ8/JTuvKyAVXXrxfcYga9AYOUoeFEaV58rtbu2d/Xg=","execute":{"pageLoad":{"options":[{"content":[{"type":"customCode","selector":"HEAD","cssSelector":"","content":"
+<script>
+    \
+    n\ n // edited today\n    //V2 of template code for intermediate prelogin Page\n      \n    \n    var No_of_visits=4;\n    \n   \nvar No_of_visits=4;\n\nvar content = {\n        \"banner_default\" : [\n            {\n                \"title\" : \"Refer and get up to N100,000!\",\n                \"banner_content\" : \"\",\n                \"cta_text\" : \"Read More\",\n                \"image_1\" : \"https://av.sc.com/ng/content/images/ng-pil-campaign.jpg\",//desktop\n              \"image_2\" : \"https://av.sc.com/ng/content/images/ng-pil-campaign-mobile.jpg\",//mobile\n                \"link\": \"https://www.sc.com/ng/faq-for-pil-campaign/?intcid=intpreb1-refer_jul24-ng-en\"\n              \n            }\n        ],\n        \"banner_for_returnvisitors\" : [\n            {\n                \"title\" : \"Refer and get up to N100,000!\",\n                \"banner_content\" : \"\",\n                \"cta_text\" : \"Read More\",\n                \"image_1\" : \"https://av.sc.com/ng/content/images/ng-pil-campaign.jpg\",//desktop\n              \"image_2\" : \"https://av.sc.com/ng/content/images/ng-pil-campaign-mobile.jpg\",//mobile\n                \"link\": \"https://www.sc.com/ng/faq-for-pil-campaign/?intcid=intpreb2-refer_jul24-ng-en\"\n            }\n        ]\t\t\n    };\n    \n    Flickerlessly = window.Flickerlessly || {};\n    !function (A) {\n      \"use strict\";\n      var init = function (id, sel, callback, persist) {\n          var animationName = 'atNodeInserted' + id; var cssStr = '@keyframes ' + animationName + ' {from {opacity:0.99} to {opacity:1} }\\n'; cssStr += sel + '{animation-duration:0.001s;animation-name:' + animationName + ';visibility:hidden}'; var head = document.getElementsByTagName(\"head\")[0]; if (head) { var style = document.createElement(\"style\"); style.setAttribute(\"type\", \"text/css\"); if (style.styleSheet) style.styleSheet.cssText = cssStr; else style.appendChild(document.createTextNode(cssStr)); head.insertBefore(style, head.firstChild) }; var _insertListener = function (event) { if (event.animationName === animationName && typeof event.target === 'object') { var isExecute = ((persist === true) || (persist === false && event.target.getAttribute('data-flk-success') === null)) ? true : false; if (console && console.info) console.info(\"Node \" + sel + \" ready! Execute: \" + isExecute, event.target); if (typeof callback === 'function' && isExecute) { callback(event.target); event.target.setAttribute('data-flk-success', animationName); } event.target.style.visibility = 'visible'; } };['animationstart', 'MSAnimationStart', 'webkitAnimationStart'].forEach(function (item, index) { document.addEventListener(item, _insertListener, false); });\n      };\n      A.onReady = function () { for (var i = 0; i < arguments.length; i++) { var obj = arguments[i]; var selector = obj.selector; var success = obj.success || null; var persist = obj.persist || false; var rand = Math.floor((Math.random() * 100) + 1); init(rand, selector, success, persist); }; };\n    }(Flickerlessly);\n    Flickerlessly.onReady(\n      {\n          selector: \"#sc-lb-module-footer\",\n          persist: true,\n          success: function (el) {\n            \n              console.log(\"qualified1\");\n    \n    \n    \n    var visitValue='1' || 0;\n    var visitCount = parseInt(visitValue) + 1;\n    \n                    adobe.target.trackEvent({\n    \n                        \"mbox\": \"mboxClickTrack\",\n    \n                        \"params\": {\n    \n                            \"profile.visitNo\": visitCount\n    \n                        }\n    \n                    });\n         \n                console.log(visitCount);  \n     \n                     \n                     var bannerclick='' || 0;\n                     var bannerclickcount = parseInt(bannerclick);\n                     if(bannerclickcount!=1 & visitCount <No_of_visits) {\n                        document.querySelector(\"#sc-lb-module-sc-banner\").insertAdjacentHTML('afterend', '<div class=\"banner-promo-align \" id=\"sc-lb-module-bonus-banner\" data-post-status=\"edit-pending-status\" data-post-status-label=\"Edit Pending\"><div class=\"banner-promo-align__wrapper\"><div class=\"only-desktop background banner-promo-align__background\"><img class=\"img-bg banner-promo-align__img\"  src=' + content.banner_default[0]['image_1'] + ' alt=\"Plant, Vase, Jar\" loading=\"lazy\" /></div><div class=\"only-mobile background banner-promo-align__background\"><img class=\"img-bg banner-promo-align__img\" src=' + content.banner_default[0]['image_2'] + ' alt=\"Plant, Vase, Jar\" loading=\"lazy\" /></div><div class=\"banner-promo-align__content\"><h2 class=\"banner-promo-align__title\">' + content.banner_default[0]['title'] + '</h2><div class=\"banner-promo-align__message\"><p style=\"color:#fff;\"><strong>' + content.banner_default[0]['banner_content'] + '</strong></p></div><div class=\"m-banner-content_action-buttons\"><ul class=\"banner-promo-align__buttons\"><li ><a href=' + content.banner_default[0]['link'] + '    data-context=\"\"class=\"c-button c-button banner-promo-align__button\"target=\"_blank\" swap-attrs=\"subChanCode,referId=aggregator\" ><span class=\"only-desktop\"> ' + content.banner_default[0]['cta_text'] + '</span><span class=\"only-mobile\"> ' + content.banner_default[0]['cta_text'] + '</span></a></li></ul></div></div></div></div>');\n                        document.querySelector(\".banner-promo-align__wrapper\").addEventListener(\"click\", function (e) {\n    e.preventDefault();\n    var url = content.banner_default[0]['link'];\n    window.open(url, '_blank');\n    });\n                     }\n                     else{\n                        document.querySelector(\"#sc-lb-module-sc-banner\").insertAdjacentHTML('afterend', '<div class=\"banner-promo-align \" id=\"sc-lb-module-bonus-banner\" data-post-status=\"edit-pending-status\" data-post-status-label=\"Edit Pending\"><div class=\"banner-promo-align__wrapper\"><div class=\"only-desktop background banner-promo-align__background\"><img class=\"img-bg banner-promo-align__img\"  src=\"' + content.banner_for_returnvisitors[0]['image_1'] + '\" alt=\"Plant, Vase, Jar\" loading=\"lazy\" /></div><div class=\"only-mobile background banner-promo-align__background\"><img class=\"img-bg banner-promo-align__img\"  src=' + content.banner_for_returnvisitors[0]['image_2'] + ' alt=\"Plant, Vase, Jar\" loading=\"lazy\" /></div><div class=\"banner-promo-align__content\"><h2 class=\"banner-promo-align__title\">' + content.banner_for_returnvisitors[0]['title'] + '</h2><div class=\"banner-promo-align__message\"><p style=\"color:#fff;\"><strong>' + content.banner_for_returnvisitors[0]['banner_content'] + '</strong></p></div><div class=\"m-banner-content_action-buttons\"><ul class=\"banner-promo-align__buttons\"><li ><a href=' + content.banner_for_returnvisitors[0]['link'] + ' data-context=\"\"class=\"c-button c-button banner-promo-align__button\"target=\"_blank\" swap-attrs=\"subChanCode,referId=aggregator\" ><span class=\"only-desktop\">' + content.banner_for_returnvisitors[0]['cta_text'] + '</span><span class=\"only-mobile\">' + content.banner_for_returnvisitors[0]['cta_text'] + '</span></a></li></ul></div></div></div></div>');\n                      \n                        document.querySelector(\".banner-promo-align__wrapper\").addEventListener(\"click\", function (e) {\n    e.preventDefault();\n    var url =content.banner_for_returnvisitors[0]['link'];\n    window.open(url, '_blank');\n    });\n                     }\n    \n                \n                          \n                                        document.querySelector(\"#sc-lb-module-bonus-banner > div\").addEventListener(\"click\", function () {\n                          \n                                              adobe.target.trackEvent({\n                          \n                                                  \"mbox\": \"mboxClickTrack\",\n                          \n                                                  \"params\": {\n                                                       \n                                                      \"clicked\": \"BANNERCLICK\",\n                          \n                                                      \"profile.bannerclickvalue\": bannerclickcount+1,\n                                                  }\n                          \n                                              });\n                          \n                                          });\n          }\n      }\n    )\n
+</script>\n
+<style>
+    \n @media only screen and (max-width: 600px) {
+        \n .background>.img-bg,
+        .background>img,
+        .cover>.img-bg,
+        .cover>img {
+            \n object-position: right;
+            \n
+        }
+        \n
+    }
+
+    \n body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    \n header {
+        order: 0;
+    }
+
+    \n .sc-bnr {
+        order: 0;
+    }
+
+    \n .banner-promo-align {
+        order: 1;
+    }
+
+    \n footer {
+        order: 2;
+    }
+
+    \n \n .banner-promo-align__button:hover {
+        background-color: transparent !important;
+    }
+
+    \n .banner-promo-align__button.c-button {
+        \n display: inline-block;
+        \n border-width: 2px;
+        \n border-style: solid;
+        \n font-weight: 400;
+        \n text-transform: uppercase;
+        \n text-align: center;
+        \n white-space: nowrap;
+        \n cursor: pointer;
+        \n -webkit-transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+        \n transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+        \n
+    }
+
+    \n .banner-promo-align {
+        margin: 40px 20px
+    }
+
+    .banner-promo-align sup {
+        vertical-align: super;
+        font-size: 50%;
+        line-height: 0
+    }
+
+    .banner-promo-align sub {
+        vertical-align: sub;
+        font-size: 50%;
+        line-height: 0
+    }
+
+    .banner-promo-align--right .banner-promo-align__message,
+    .banner-promo-align--right .banner-promo-align__title {
+        color: #000
+    }
+
+    .banner-promo-align--right .banner-promo-align__button {
+        border-color: #000;
+        color: #000
+    }
+
+    .banner-promo-align--right .banner-promo-align__button:hover {
+        background-color: #e2e2e2
+    }
+
+    .banner-promo-align--right .banner-promo-align__background::after {
+        background: -webkit-gradient(linear, right top, left top, color-stop(25%, #fff), to(transparent));
+        background: linear-gradient(to left, #fff 25%, transparent 100%)
+    }
+
+    .banner-promo-align__wrapper {
+        padding: 0 20px;
+        max-width: 1340px;
+        position: relative;
+        min-height: 300px;
+        margin: 0 auto
+    }
+
+    .banner-promo-align__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        z-index: 0;
+        overflow: hidden
+    }
+
+    .banner-promo-align__background::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-gradient(linear, left top, right top, color-stop(25%, #000), to(transparent));
+        background: linear-gradient(to right, #000 25%, transparent 100%);
+        opacity: .5
+    }
+
+    .banner-promo-align__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: auto;
+        width: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        max-width: none;
+        max-height: none;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -o-object-fit: cover;
+        object-fit: cover
+    }
+
+    .banner-promo-align__content {
+        z-index: 1;
+        position: relative;
+        padding: 40px 0
+    }
+
+    .banner-promo-align__title {
+        font-size: 30px;
+        line-height: 35px;
+        letter-spacing: 0;
+        max-width: 820px;
+        color: #fff;
+        font-weight: 300;
+        margin-bottom: 15px;
+        word-break: break-word;
+        -webkit-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        height: auto;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+
+    .banner-promo-align__message,
+    .banner-promo-align__terms-condition-box {
+        margin: 16px 0;
+        line-height: 20px;
+        font-size: 18px;
+        max-width: 550px;
+        text-transform: none;
+        overflow: visible;
+        font-weight: 300;
+        letter-spacing: .5px;
+        color: #fff
+    }
+
+    .banner-promo-align__message li,
+    .banner-promo-align__message p,
+    .banner-promo-align__terms-condition-box li,
+    .banner-promo-align__terms-condition-box p {
+        margin-bottom: 10px
+    }
+
+    .banner-promo-align__terms-condition-box a {
+        cursor: pointer;
+        color: #fff
+    }
+
+    .banner-promo-align__terms-condition-box a:hover {
+        text-decoration: underline
+    }
+
+    .banner-promo-align__buttons {
+        width: 100%;
+        margin-top: 40px
+    }
+
+    .banner-promo-align__button {
+        font-size: 14px;
+        white-space: normal;
+        line-height: 125%;
+        padding: 10px 30px;
+        border-radius: 50px;
+        color: #fff;
+        border-color: #fff;
+        background-color: transparent;
+        letter-spacing: .5px;
+        border-width: 2px
+    }
+
+    .banner-promo-align__button:hover {
+        background-color: rgba(255, 255, 255, .5)
+    }
+
+    @media (max-width:680.98px) {
+        .banner-promo-align--right .banner-promo-align__wrapper {
+            padding: 0;
+            border: 1px solid #e5e5e5;
+            background: #f9f9f9
+        }
+        .banner-promo-align--right .banner-promo-align__background {
+            height: 200px;
+            position: relative
+        }
+        .banner-promo-align--right .banner-promo-align__background::after {
+            background: 0 0
+        }
+        .banner-promo-align--right .banner-promo-align__content {
+            padding: 20px
+        }
+        .banner-promo-align--right .banner-promo-align__buttons {
+            margin: 30px 0 20px
+        }
+    }
+
+    @media (min-width:681px) {
+        .banner-promo-align__wrapper {
+            padding: 0 30px;
+            min-height: 320px
+        }
+        .banner-promo-align__buttons {
+            text-align: left
+        }
+        .banner-promo-align--right .banner-promo-align__content {
+            width: 50%;
+            left: 50%
+        }
+    }
+
+    @media (min-width:1024px) {
+        .banner-promo-align {
+            margin: 40px 32px
+        }
+    }
+
+    \n
+</style>"}],"type":"actions","sourceType":"target"},{"content":[{"type":"rearrange","selector":"HTML > BODY","cssSelector":"#sc-lb-module-back-to-top > DIV:nth-of-type(1)","content":{"from":"3","to":"19"}}],"type":"actions","sourceType":"target"},{"content":[{"type":"rearrange","selector":"HTML
+> BODY","cssSelector":"#sc-lb-module-back-to-top > DIV:nth-of-type(1)","content":{"from":"19","to":"3"}}],"type":"actions","sourceType":"target"},{"content":[{"type":"setStyle","selector":"#sc-lb-module-back-to-top > DIV.sc-content-wrapper:eq(0)","cssSelector":"#sc-lb-module-back-to-top
+> DIV:nth-of-type(1)","content":{"display":"none"}}],"type":"actions","sourceType":"target"}],"metrics":[{"type":"click","selector":"#sc-lb-module-promotional-masthead-3","eventToken":"zU+1uh/rzHlO7f+7lP/LJbHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#sc-lb-module-segment-list
+> DIV.sc-content-wrapper:eq(0) > DIV.sc-segments__block:eq(0) > UL.sc-segments__list:eq(0) > LI.sc-segments__item:eq(0)","eventToken":"zU+1uh/rzHlO7f+7lP/LJbHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#sc-lb-module-promotional-masthead-2","eventToken":"zU+1uh/rzHlO7f+7lP/LJbHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#sc-lb-module-promotional-masthead-1","eventToken":"zU+1uh/rzHlO7f+7lP/LJbHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#sc-lb-module-segment-list
+> DIV.sc-content-wrapper:eq(0) > DIV.sc-segments__block:eq(0) > UL.sc-segments__list:eq(0) > LI.sc-segments__item:eq(4)","eventToken":"zU+1uh/rzHlO7f+7lP/LJbHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#sc-lb-module-segment-list
+> DIV.sc-content-wrapper:eq(0) > DIV.sc-segments__block:eq(0) > UL.sc-segments__list:eq(0) > LI.sc-segments__item:eq(3)","eventToken":"zU+1uh/rzHlO7f+7lP/LJbHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#sc-lb-module-segment-list
+> DIV.sc-content-wrapper:eq(0) > DIV.sc-segments__block:eq(1) > UL.sc-segments__list:eq(0) > LI.sc-segments__item:eq(0)","eventToken":"zU+1uh/rzHlO7f+7lP/LJbHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#sc-lb-module-promotional-masthead-6","eventToken":"zU+1uh/rzHlO7f+7lP/LJbHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#sc-lb-module-segment-list
+> DIV.sc-content-wrapper:eq(0) > DIV.sc-segments__block:eq(0) > UL.sc-segments__list:eq(0) > LI.sc-segments__item:eq(2)","eventToken":"zU+1uh/rzHlO7f+7lP/LJbHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#tns1-item5","eventToken":"WzS98qrI6qa6nC/aBPiK8bHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#sc-lb-module-promotional-masthead-5","eventToken":"zU+1uh/rzHlO7f+7lP/LJbHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#sc-lb-module-segment-list
+> DIV.sc-content-wrapper:eq(0) > DIV.sc-segments__block:eq(1) > UL.sc-segments__list:eq(0) > LI.sc-segments__item:eq(1)","eventToken":"zU+1uh/rzHlO7f+7lP/LJbHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#sc-lb-module-promotional-masthead-4","eventToken":"zU+1uh/rzHlO7f+7lP/LJbHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#sc-lb-module-segment-list
+> DIV.sc-content-wrapper:eq(0) > DIV.sc-segments__block:eq(0) > UL.sc-segments__list:eq(0) > LI.sc-segments__item:eq(1)","eventToken":"zU+1uh/rzHlO7f+7lP/LJbHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="},{"type":"click","selector":"#tns1-item0","eventToken":"WzS98qrI6qa6nC/aBPiK8bHIOKMJSfhZpJ/Iaj88vWtw54XAlJ3xNRImNE7jBWgsjF0jaxBBSHBUi2XwDwPc+Q=="}]}}}
