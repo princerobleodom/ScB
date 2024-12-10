@@ -1,0 +1,61 @@
+span.button,
+span.button input,
+span.shortbutton,
+span.shortbutton input,
+span.mediumbutton,
+span.mediumbutton input,
+span.backbutton,
+span.backbutton input,
+span.buttondisabled,
+span.buttondisabled input,
+span.mediumbuttondisabled,
+span.mediumbuttondisabled input {}
+
+span.button input,
+span.shortbutton input,
+span.mediumbutton input,
+span.backbutton input,
+span.buttondisabled input,
+span.mediumbuttondisabled input {}
+
+span.shortbutton {}
+
+span.shortbutton input {}
+
+span.backbutton {}
+
+span.backbutton input {}
+
+span.buttondisabled,
+span.mediumbuttondisabled {}
+
+span.buttondisabled input,
+span.mediumbuttondisabled input {}
+
+span.button:hover,
+span.button-behavior-hover,
+span.shortbutton:hover,
+span.shortbutton-behavior-hover,
+span.mediumbutton:hover,
+span.mediumbutton-behavior-hover {}
+
+span.button:hover input,
+span.button-behavior-hover input,
+span.shortbutton:hover input,
+span.shortbutton-behavior-hover input,
+span.mediumbutton:hover input,
+span.mediumbutton-behavior-hover input {}
+
+span.backbutton:hover,
+span.backbutton-behavior-hover {}
+
+span.backbutton:hover input,
+span.backbutton-behavior-hover input {}
+
+span.button input,
+span.shortbutton input,
+span.mediumbutton input {}
+
+span.backbutton input {}
+
+@-moz-document url-prefix(http) {}

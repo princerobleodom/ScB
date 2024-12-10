@@ -1,0 +1,40 @@
+$icons: (
+        "account_saving",
+        "account_credit_card",
+        "account_loan",
+        "error",
+        );
+
+@each $icon in $icons {
+  .icon--#{$icon} { background-image: url("../images/icon/dynamic/#{$icon}.png"); }
+}
+
+.icon {
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+.icon--account_saving,.icon--account_credit_card,.icon--account_loan{
+    background-position: 30px;
+/*
+    text-transform: lowercase;
+    &::first-letter {
+      text-transform: capitalize;
+    }*/
+}
+.icon--error{
+        background-position: 30px 13px;
+
+}
+
+
+.sc{
+  &-link{
+    &__add{
+      padding-left: 20px;
+      background-image: url(../images/plus.png);
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+  }
+}

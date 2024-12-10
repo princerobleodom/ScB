@@ -1,0 +1,57 @@
+/**
+ * Dashboard
+ *
+ * @example 
+ *      div.your-component-here
+ *       h3 Sample code
+ *       p goes here
+ */
+.sc{
+   &-dashboard{
+
+    @extend .sc-tbl;
+
+        & > tbody {
+            border: 1px solid $sc-table-border-color;
+            tr {
+                cursor: pointer;
+                &:hover{
+                    td{
+                        background-color:  #f7fbfd;
+                    }
+                }
+
+                td {
+                    padding: 25px 0;
+                    &.icon {
+                        padding-left: 80px;
+                    }
+                }
+            }
+        }
+
+        &__label, &__label * {
+            font-size: 1.5em;
+            color: #555;
+            font-family: $sc-font-light;
+        }
+
+
+        &-account-name{
+            color: #555;
+        }
+
+        &-currency{
+            font-size: 15px!important;
+            padding: 0 10px!important;
+            color: #919191!important;
+            font-family: $default-sc-font-light!important;
+        }    
+
+
+        &-amount {
+            @extend %table-amount;
+            color: #555;
+        }
+   }
+}

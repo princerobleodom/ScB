@@ -1,0 +1,45 @@
+@import 'login';
+@import 'logout';
+@import 'creditcard';
+@import 'error';
+@import 'crossingpage';
+@import 'casa';
+
+
+
+
+/**
+ * 
+ */
+.pagebanner {
+	margin-top: 20px;
+}
+
+
+.tbl_form, .tbl_listing, .tbl_paging, .tbl_result{
+	@extend .sc-tbl;
+}
+
+hr {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#menuTab{
+    display: none;
+}
+
+.border_left_grey, .border_right_grey {
+	display: none;
+}
+
+.sc-spacer {
+	display: none;
+}
+
+.hr_bottom_row {
+	display: none;
+}

@@ -1,0 +1,33 @@
+$logout-iframe-border: #E5E5E5;
+#logout-page {
+	.border_left_grey {
+		display: none;
+	}
+
+	padding-bottom:0px;
+
+	#iframe-container, #iframe-container-dev {
+		&-item {
+			display: block;
+			width: 100%;
+			height: 490px;
+		}
+		margin-bottom: 55px;
+	}
+
+	.button {
+		margin: 10px 0;
+	}
+
+	.sc-notes {
+		letter-spacing: 0em;
+		color: #adadad;
+		font-size: 12px;
+		padding-top: 10px;
+	}
+
+	.sc-tbl, .sc-table {
+		margin-top: 0;
+		margin-bottom: 13px;
+	}
+}

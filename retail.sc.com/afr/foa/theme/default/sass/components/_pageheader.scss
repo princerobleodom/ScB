@@ -1,0 +1,43 @@
+.sc{
+	&-page-header {
+			@extend .sc-g;
+
+			&__title {
+				@extend .sc-u-1-2; 
+				@extend .title--blue;
+
+				&__no__crumbs{
+					@extend .sc-u; 
+					@extend .title--blue;
+				}
+
+				&__no-crumbs {
+					@extend .sc-u-3-4;
+					@extend .title--blue;
+				}
+
+				&.large {
+					@extend .sc-u-3-4;
+				}
+			}
+
+			&__breadcrumb {
+				@extend .title--green;
+				font-size: 1em !important;
+			}
+
+			&__helper {
+				@extend .sc-u-1-2;
+				@extend .text-align-right;
+				position: relative;
+
+				& > div, & > span {
+					
+				}
+
+				&.small {
+					@extend .sc-u-1-4;
+				}
+			}
+	}
+}

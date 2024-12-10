@@ -1,0 +1,496 @@
+/**
+ * SC Table - extends .sc-tbl so it will not conflict with our .sc-tbl declarations
+ * 
+ * @extend .sc-tbl
+ *
+ */
+
+
+
+/**
+ * SC Table for Listing - another instance of SC Table (.sc-tbl) but for table listings
+ */
+
+.sc-tbl {
+	
+		border-collapse: collapse !important;
+		border: 1px solid $sc-table-border-color;
+
+		& > tbody {
+			
+			& > tr {
+				background-color: none;
+
+				& > td, & > th {
+					padding: 15px 0;
+					padding-top: 18px;
+					background-color: #fff;
+					font-size: 1em;
+					//border-bottom: 1px solid $sc-table-border-color;
+					border-bottom: 1px solid #f2f2f2;
+					border-top: 1px solid $sc-table-border-color;
+					text-align: left;
+					font-family: $sc-font-regular;
+					
+					table tr td {
+						padding-top: 0px;
+					}
+				}
+
+				& > th {
+					background-color: $sc-table-header-bg-color;
+					font-size: $sc-table-header-font-size;
+					text-transform: $sc-table-header-text-transform;
+					color: $sc-table-header-color;
+				}
+
+				& > td {
+					line-height: 1.3em;
+					padding-right: $sc-table-default-padding-size;
+
+					&:first-child{
+						padding-right: 0;
+						padding-left: $sc-table-default-padding-size;
+					}
+
+					&:last-child{
+						padding-right: 0;						
+						padding-left: $sc-table-default-padding-size;
+					}
+
+					&:nth-last-child(2){
+						padding-right: 0;						
+					}
+
+					&:nth-child(2){
+						@extend .sc-tbl__label;
+					}
+				}
+
+				&:last-child{
+					& > td {
+						border-bottom: 1px solid $sc-table-border-color !important; 
+					}
+				}
+			}
+
+			/**
+	 		 * Fix missing TBODY border on Firefox
+	 		 * @return {[type]} [description]
+	 		 */
+			& > td, & > th {
+		 		letter-spacing: .045em;
+		 		line-height: 1.35em;
+		 		//position: relative;
+		 		
+	 			@-moz-document url-prefix() {
+					background-clip: padding-box !important;
+				}
+		 	}
+		}
+
+		&__label{
+			font-size: .875rem;
+			
+			text-transform: uppercase;
+
+			color: $sc-table-header-color;
+		}
+		
+		.helper, &__helper, .tbl_display_grey_services {
+			& > td, & > th {
+				$_color: $sc-table-header-color;
+				$_bgColor: #fafafa;
+				$_borderBottom: 0 solid #d7d7d7;
+
+				background-color: $_bgColor;
+				color: $_color;
+				border-bottom: 0 solid #d7d7d7;
+				font-size: .875rem;
+				text-transform: uppercase;
+			}
+		}
+
+		&__clear , .clear, .tbl_form_end {
+			& > td, & > th {
+				padding: 15px 0px;
+				background: none;
+			}
+		}
+
+		&__content, .content {
+			& > td, & > th {
+				td, th {
+					border-bottom: none;
+				}
+			}
+		}
+
+		&__no-border, .no-border {
+			& > td, & > th {
+				border-bottom: none;
+			}
+		}
+
+		&__success, .success {
+			& >  td, & > th {
+				background-color: #EDF6EC!important;
+				color: #6ABF79!important;
+			}
+		}
+
+		&__error-container, .error-container {
+			background-color: $sc-error-bgcolor !important;
+			
+			& > td {
+				padding: 10px 0;
+				background: none;
+				
+				.error-container__message {
+					padding: 10px 10px 10px 46px;
+					background: transparent;
+					color: #2c2c2c;
+					background-image: url("../images/icon/Icon_Error.png") !important;
+					background-position: left center;
+					background-repeat: no-repeat;
+					background-size: 30px 30px;
+					font-size: 14px;
+					text-transform: initial;
+				}
+			}
+
+		}
+
+		/**
+		 * @todo Migrate this to new component folder
+		 */
+		& > tbody {
+			& > tr {
+				
+				& > td {
+					
+					input[type=text],input[type=password] {
+						box-sizing: border-box;
+						min-height: 46px;
+						padding: 0px 15px;
+						font-size: 18px;
+						width: 100%;
+						border: 1px solid #ccc;
+						&.large {
+							width: 99.9%;
+						}
+
+						&.max {
+							width: 99.9%;
+						}
+
+						&:focus{
+							border-color: rgba(180, 222, 250, 0.8);
+  							box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(180, 222, 250, 0.6);
+  							outline: 0 none;
+						}
+					}
+				}
+			}
+		}
+
+		& > tfoot {
+			& > tr {
+				border: none;
+				background: none;
+
+				& > td {
+					border: none !important;
+					background: none;
+				}
+			}
+		}
+
+	
+
+		/**
+		 * Override every .header class and inherint .title--blue class
+		 */
+		/*tr.header {
+			td, th {
+				background : none;
+				@extend .title--blue;
+				border: none;
+			}
+		}
+
+		tr {
+			&.no-borders {
+				td,th {
+					border: none !important;
+				}
+			}
+		}
+*/
+
+	
+	/**
+	 * SC Listing Table
+	 */
+
+	&.listing {
+		
+		/**
+		 * overrrider legacy table.scss declaration for each TDs
+		 * @check common/_table.scss
+		 */
+		
+		& > tbody {
+			& > tr {
+				& > td, & > th {
+					border-top: none;
+
+					&:first-child{
+						border-left: none;
+					}
+					&:last-child{
+						border-right: none;
+					}
+
+				}
+			}
+		}
+		
+
+		& > thead{
+			border: none;
+			& > tr {
+				& > td, & > th {
+					background : none;
+					//@extend .title--blue;
+				}
+			}
+		}
+
+		& > tbody {
+			border: 1px solid $sc-table-border-color;
+			& > tr {
+
+				/**
+				 * Table row border manipulation
+				 */
+				& > td{
+					border-bottom: 1px solid $sc-table-row-border-color;
+					&:first-child, &:last-child{
+						border-bottom: none;
+					}
+				}
+			
+				&:first-child {
+					& >  td{
+						border-bottom: none;
+					}
+				}
+
+				&:last-child {
+					& >  td{
+						border-bottom: none;
+					}
+				}
+
+				& > th {
+					background-color: $sc-table-grey-color;
+					padding: 30px 0;
+					font-size: .875em;
+					text-transform: uppercase;
+					font-family: $sc-font-regular;
+					color: $sc-table-tbody-th-color;
+					font-weight: normal;
+
+					padding-right: 5px;
+
+					& * {
+						font-weight: normal;
+					}
+
+					/**
+					 * put this border bottom none to clear the border for tbody headers
+					 * @todo check if this will affect everything
+					 */
+					border-bottom: 1px solid transparent;
+
+					&:first-child{
+						padding-right: 0;
+						padding-left: $sc-table-default-padding-size;
+					}
+
+					&:last-child{
+						padding-right: 0;						
+						padding-left: $sc-table-default-padding-size;
+					}
+
+					&:nth-last-child(2){
+						padding-right: 0;						
+					}
+
+				}
+
+				& > td {
+					color: $sc-table-tbody-th-color;
+					font-size: $sc-table-tbody-td-size;
+					padding-right: $sc-table-default-padding-size;
+
+					&:first-child{
+						padding-right: 0;
+						padding-left: $sc-table-default-padding-size;
+					}
+
+					&:last-child{
+						padding-right: 0;						
+						padding-left: $sc-table-default-padding-size;
+					}
+
+					&:nth-last-child(2){
+						padding-right: 0;						
+					}
+				} 
+
+			}
+		}
+
+		&.less-header-padding {
+			& > tbody {
+				& > th {
+
+					padding-right: $sc-table-default-padding-size * .25;
+
+					&:first-child{
+						padding-right: 0;
+						padding-left: $sc-table-default-padding-size;
+					}
+
+					&:last-child{
+						padding-right: 0;						
+						padding-left: $sc-table-default-padding-size;
+					}
+
+					&:nth-last-child(2){
+						padding-right: 0;						
+					}
+
+
+				}
+			}
+		}
+	}
+
+
+	/**
+	 * SC Results Table
+	 */
+	&.results {
+		//@extend .sc-tbl.listing;
+		border: 1px solid $sc-table-border-color;
+
+		& > thead {
+			& > tr{
+				& > th {
+					border-bottom: none !important;
+					font-size: .875em !important;
+					font-weight: normal !important;
+					text-transform: uppercase;
+					letter-spacing: .04em;
+					color: #BDBDBD !important;
+					background-color: #fcfcfc!important;
+					text-align: left;
+					
+					padding: 15px 5px 15px 0px;
+					
+					&:first-child {
+						padding-left: 30px;
+					}
+
+					&:last-child {
+						padding-left: 0px;
+						padding-right:$sc-table-default-padding-size;
+						
+					}
+
+					font-family: $sc-font-regular;
+
+					a, p{
+						color: inherit;
+					}
+				}
+			}
+		}
+
+
+		& > tbody {
+			border-top: none;
+			& > tr {
+
+				/**
+				 * Table row border manipulation
+				 */
+				
+				& > td{
+					color: $sc-table-tbody-color;
+					font-size: 1em;
+					border-top: 1px solid $sc-table-row-border-color;
+					padding-right: 5px;
+	        	
+					&:first-child {
+						padding-left:$sc-table-default-padding-size;
+						@extend .sc-right-padding-small;
+					}
+
+					&:last-child {
+						padding-right:$sc-table-default-padding-size;
+						padding-left: 0px;
+					}
+
+					&:nth-child(2) {
+						//font-size: .875rem;
+						text-transform: initial;
+						color: $sc-table-tbody-color;
+						
+					}
+				}
+
+				&:first-child {
+					& >  td{
+						border-top: none;
+					}
+				}
+			}
+
+
+		}
+	}
+
+
+	&.no-borders{
+		@extend .sc-tbl;
+		border: 1px solid transparent!important;
+		& > thead, & > tbody, & > tfoot {
+			border: 1px solid transparent!important;
+			& > td {
+				border: 1px solid transparent!important;
+			}
+		}
+	}
+
+
+	/**
+	 * Plain Table for content
+	 */
+	&-plain {
+		& > tbody {
+			& tr {
+				& td {
+					@extend .sc-bottom-padding-small;
+					@extend .sc-right-padding-small;
+				}
+			}
+		}
+	}
+
+}
+
+

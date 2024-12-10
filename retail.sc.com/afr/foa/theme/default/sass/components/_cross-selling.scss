@@ -1,0 +1,83 @@
+
+$sc-cross-selling-container-padding: 40px;
+$sc-cross-selling-container-border: 1px solid #e5e5e5;
+$sc-cross-selling-black: $sc-grey-color;
+$sc-cross-selling-grey: #9D9D9D;
+$sc-cross-selling-header-size: 28px;
+$sc-cross-selling-header-font: $sc-font-thin;
+$sc-cross-selling-font: $sc-font-light;
+$sc-cross-selling-font-size: 14px;
+
+.sc{
+	&-cross-selling {
+		font-family: $sc-cross-selling-font;
+		border: $sc-cross-selling-container-border;
+		background: #fff;
+		padding: $sc-cross-selling-container-padding;
+		color: $sc-cross-selling-grey;
+		line-height: 1.5em;
+		
+		&__title {
+			padding-top: $sc-cross-selling-container-padding / 2;
+			padding-bottom: $sc-cross-selling-container-padding / 2;
+			font-size: $sc-cross-selling-header-size;
+			color: $sc-cross-selling-black;
+			font-family : $sc-cross-selling-header-font; 
+			font-weight: bold;
+			line-height: 1.25em;
+		}
+		
+		&_col1, &_col2 {
+			letter-spacing: 0.06em !important;
+			font-size: $sc-cross-selling-font-size;
+		}
+
+		&_col2 {
+			> div {
+				padding: 0px 20px;
+			}
+		}
+
+		&__desc {
+		
+		}
+
+		&__benefits {
+			&__title {
+				color: $sc-cross-selling-black;
+				font-weight: bold;
+			}
+
+			&__desc {
+
+			}
+
+			&__lists{
+				li {
+					padding-left: 25px;
+					background-image: url(../images/icon/Icon_CheckSmall.png);
+					background-repeat: no-repeat;
+					background-position: 0px 2px;
+				}
+			}
+		}
+
+		&__img {
+			line-height: 310px;
+			background-repeat: no-repeat;
+			background-position: top center;
+			color: transparent;
+		}
+
+		&__btn {
+			padding-left: 25px;
+			input {
+				box-sizing: border-box;
+				text-align: center;
+				margin: 0 auto;
+				width: 170px !important;
+				height: 68px;
+			}
+		}
+	}
+}

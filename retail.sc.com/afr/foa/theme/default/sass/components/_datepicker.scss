@@ -1,0 +1,144 @@
+$sc-datepicker-border-color: #E0E0E0;
+$sc-datepicker-month-font-size: 18px;
+$sc-calendar-background-color: #fff;
+
+$sc-calendar-day-label-text-color: #525252;
+$sc-calendar-day-label-background-color: #F8F8F8;
+$sc-calendar-dates-font: $sc-font-light;
+
+$sc-calendar-dates-label-color: #C3C3C3;
+$sc-calendar-dates-label-default-color: #333;
+
+
+
+
+/**
+ * Calendar picker button - custom positioning for Calendar button
+ * @todo move this on a certain file
+ */
+
+a.dp-choose-date {
+	/*
+	
+	Legacy Date Picker
+	 */
+	float: left;
+	width: 18px;
+	height: 16px;
+	padding: 0;	
+	display: block;
+	text-indent: -2000px;
+	overflow: hidden;
+
+
+	/**
+	 * New changes
+	 */
+
+	box-sizing: border-box;
+	min-height: 46px;
+	background-position: right center;
+	background-image: url(../images/icon/Icon_Calendar.png)!important;
+	margin-left: -45px;
+	width: 37px!important;
+	background-repeat: no-repeat;
+
+}
+
+/**
+ * Date Picker calendar
+ */
+
+#dp-popup{
+	border-color: $sc-datepicker-border-color;
+	background: $sc-calendar-day-label-background-color;
+	padding-top: 20px;
+
+	/**
+	 * hide elements 
+	 */
+	.dp-nav-prev-year,.dp-nav-next-year {
+		display: none;
+	}
+
+	/**
+	 * Calendar Link navigation
+	 */
+	.dp-nav-prev, .dp-nav-next {
+		top: 24px;
+	}
+
+	.dp-nav-prev-month {
+    margin-left: 18px;
+
+		background-image: url(../images/icon/calendar-arrow-icon-left.png ) !important;
+	}
+
+	.dp-nav-next-month {
+    margin-right: 16px;
+
+		background-image: url(../images/icon/calendar-arrow-icon-right.png) !important;
+	}
+
+
+	/**
+	 * Calendar Month
+	 */
+	> h2 {
+		font-size: $sc-datepicker-month-font-size;
+		font-family: $sc-calendar-dates-font;
+	}
+
+
+	/**
+	 * Calendar Container
+	 */
+	.dp-calendar{
+		table {
+			margin-top: 10px;
+			border-collapse: collapse;
+
+			background: $sc-calendar-background-color;
+			thead{
+				th { 
+					background-color: $sc-calendar-day-label-background-color;
+					color: $sc-calendar-day-label-text-color;
+				}
+			}
+			tbody {
+				border: 20px solid transparent;
+				td {
+					background: none;
+					line-height: 1.3em;
+					font-size: 16px;
+					font-family: $sc-calendar-dates-font;
+
+					letter-spacing: 0.05em;
+					color: $sc-calendar-dates-label-default-color;
+
+					background-repeat: no-repeat;
+					background-position: center;
+					
+					height:50px;
+					box-sizing: border-box;
+					padding: 0px;
+
+					&.other-month {
+						color: $sc-calendar-dates-label-color;
+					}
+
+					&.today {
+						color: #333;
+						background-image: url(../images/icon/BlueCircle_Line.png);
+					}
+
+					&.selected {
+						color: #fff;
+						background-image: url(../images/icon/BlueCircle_Solid.png);
+					}
+
+				}
+			}
+		}
+	}
+}

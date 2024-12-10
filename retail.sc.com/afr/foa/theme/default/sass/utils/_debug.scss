@@ -1,0 +1,23 @@
+/**
+ * DEBUG for SCB remove this on when committing
+ */
+
+xtable {
+	border: 1px solid orange !important;
+
+	&.tbl_form,&.tbl_display_grey {
+		border: 1px solid red !important;
+	}
+
+	&.tbl_results {
+		border: 1px solid yellow !important;
+	}
+
+	&.tbl_listing {
+		border: 1px solid pink !important;
+	}
+
+	&.sc-tbl {
+		border: 1px solid green !important;
+	}
+}

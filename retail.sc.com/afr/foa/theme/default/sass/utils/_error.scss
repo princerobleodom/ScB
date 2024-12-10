@@ -1,0 +1,47 @@
+/**
+ * Has Error can be included to an input field
+ */
+.has-error {
+	border: 1px solid tomato!important;
+}
+
+
+/**
+ * Empty state container
+ */
+.sc-empty{
+	box-sizing: border-box;
+	background: #f0f0f0;
+	min-height: 160px;
+	width: 100%;
+	padding: 50px 30px;
+	&__message {
+		line-height: 1.85em;
+		text-align: center;
+		color: #929292;
+		font-size: 18px;
+		//height: 20px;
+		font-family: $sc-font-light;
+
+		&__icon {
+			margin-bottom: -14px;
+			padding-right: 8px;
+			height: 40px;
+		}
+	}
+}
+
+.sc-tbl {
+	label.txt_error {
+		display: block;
+		//position: absolute;
+		font-size: 12px;
+		padding: 5px 0px 0px 0px;
+		margin: 0px;
+		margin-bottom	: -10px;
+		//bottom: 0px;
+		line-height: 1.4em;
+		text-transform: initial;
+	}	
+}
+

@@ -1,0 +1,16 @@
+
+div {
+	&.table-row {
+		display: table-row;
+		.table-cell {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+
+	&.content-footer {
+		padding:15px 0px;
+		background-color: #fff;
+		@include table_data();
+	}
+}

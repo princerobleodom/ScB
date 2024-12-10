@@ -1,0 +1,143 @@
+$sc-footer-color: #fff;
+
+.footer * {
+	box-sizing: border-box;	
+}
+
+.footer {
+
+  margin-top: 0px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: #EFEFEF;
+  background-color: #303030;
+}
+
+footer .footer_wrapper {
+	background-color: #303030;
+}
+
+.footer .footer-block a {
+	font-size: 14px !important;
+	color: $sc-footer-color;
+	display:block;
+	font-family: "SC Sans Web Light", sans-serif;
+}
+
+.footer .footer-block a.small-text {
+	font-size: 12px;
+	color: #777;
+	font-family: "SC Sans Web Regular", sans-serif;
+}
+
+.footer .footer-block a.contact-text {
+	word-wrap: break-word;
+	font-size: 17px !important;
+	line-height: 1.3em;
+	font-family: $sc-font-ultra-thin;
+}
+
+.vertical-seperator {
+	border-bottom: 1px solid #F1F1F1;
+	padding-bottom: 30px !important;
+}
+
+.footerDetails {
+	padding: 30px 0;
+	
+	border-bottom: 1px solid #3A3A3A;
+
+/*	.sitemap {
+		border-left: 1px solid #3A3A3A; 
+		padding: 15px 0px 15px 20px;
+		background-repeat: no-repeat;
+		background-position: 100% 50%;
+	}
+*/
+
+	.sitemap {
+		border-left: 1px solid #3A3A3A; 
+		padding: 15px 0px 15px 20px;
+		//background-image: url(../images/footer/footerFlag@1x.png);
+		background-image: url(../images/footer/flag.png);
+		background-repeat: no-repeat;
+		background-position: 100% 50%;
+		
+		a {
+			 color: #8c8c8c!important;
+		}
+		&:hover{
+			a, span {
+				color: #c9c9c9!important;
+			}
+			
+			background-image: url(../images/footer/flag_hover.png);
+		}
+	}
+
+	.copyright {
+		padding: 15px 0;
+		margin:auto 0;
+	}
+}
+
+.footer-block {
+	min-height: 210px;
+	
+	width: 25%; 
+	padding: 0 20px; 
+	float: left; 
+	line-height: 30px;
+
+	
+
+	&:last-child , &:nth-last-child(2){
+		border-left: 1px solid #3A3A3A; 
+	}
+}
+
+.apple-store-badge {
+	width: 100%;
+	background-image: url(../images/footer/app-store-ico.png);
+	height: 54px;
+	background-size: 90%;
+	margin-bottom:10px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+
+	&.off {
+		background-image: url(../images/footer/comingSoon_AppStore.png);
+		cursor: context-menu;
+	}
+}
+
+.google-play-badge {
+	width: 100%;
+	background-image:url(../images/footer/google-play-ico.png);
+	height: 71px;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+
+	&.off {
+		background-image:url(../images/footer/comingSoon_GooglePlay.png);
+		cursor: context-menu;
+	}
+}
+
+.get-in-touch {
+	color: #777 !important;cursor:default;
+}
+
+.footer-hr {
+	background-color: #474747; width: 55px; height: 5px; float: left;margin: 6px 10px 0 0;
+}
+
+.footer-copyright {
+	font-size: 13px; float: left; font-family: SC Sans Web Light;
+	
+	a {
+		color: #EFEFEF;
+	}
+}

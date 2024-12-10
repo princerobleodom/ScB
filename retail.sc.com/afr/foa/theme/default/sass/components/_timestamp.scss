@@ -1,0 +1,21 @@
+.sc{
+	&-timestamp, &.timestamp{
+		
+		text-transform: uppercase;
+		color: $sc-light-grey-color;	
+
+		/*
+			remove this
+		 */
+		@extend .text-align-right;
+
+		span#printRefreshTimestamp {
+			font-size: .75em; 
+			color: $sc-light-grey-color;
+			font-family: $sc-font-light;
+			letter-spacing: 0.05em;
+		}
+	}	
+
+		
+}

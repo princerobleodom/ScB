@@ -1,0 +1,38 @@
+.row965 {
+    margin: initial;
+    min-width: initial;
+    max-width: 940px;
+    margin: 0 auto;
+}
+.row960{
+    margin: initial;
+    min-width: initial;
+    max-width: 960px;
+    margin: 0 auto;
+}
+/* Title and steps box */
+.layout_title_step{
+        display: inline-block;
+        padding-bottom: 30px;
+        width: 100%;
+        &--title {
+            width: 80%;
+            float: left;
+        }
+        &--step{
+            float: right;
+            width: 19%;
+            text-align: right;
+        }
+}
+
+
+
+.sc{
+    &-textfield-helper{
+        font-size: 0.75em;
+        color: #b5b5b5;
+        font-family: "SC Sans Web Light",sans-serif;
+        padding-top: 15px;
+    }
+}

@@ -1,0 +1,32 @@
+/**
+ * SC Table - extend this table css using SASS @extend
+ * 
+ */
+
+%sc-tbl {
+	
+}
+
+/* table fist and last child for 30px */
+/*.sc-tbl > tbody{
+	> tr {
+
+			> td, > th {
+				&:first-child{
+					border-left: 1px solid #e0e0e0;
+				}
+				&:last-child{
+					border-right: 1px solid #e0e0e0;
+				}
+
+				&:first-child,&:last-child,{
+					padding-left: 30px;
+					padding-right: 0px;
+					
+					.border_left_grey, .sc-spacer {
+						display: none;
+					}
+				}
+			}
+	}
+}*/

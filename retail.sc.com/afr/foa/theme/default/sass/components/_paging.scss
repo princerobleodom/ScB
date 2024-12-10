@@ -1,0 +1,54 @@
+
+.sc{
+	&-paging{
+	 	margin: 0 auto;
+
+	 	@extend .text-align-center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		
+	 	&__first, &__previous, &__next, &__last, &__page-link{
+	 		box-sizing: border-box;
+	 		padding: 5px;
+	 		border: 1px solid $sc-table-tbody-th-color;
+	 		display: inline-block;
+	 		margin-right: 2px;
+	 		min-width: 28px;
+			color: $sc-grey-color;
+
+	 		-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+	 	}
+
+
+
+	 	&__first, &__previous, &__next, &__last, &__page-link{
+	 		&:hover {
+	 			border: 1px solid $sc-link-color;
+	 			color: lighten($sc-grey-color,40%);
+	 		}
+	 	}
+
+	 	strong, &__page-link.selected {
+	 		border: 2px solid $sc-link-color;
+
+	 		&:hover {
+ 				border: 2px solid darken($sc-link-color,10%);
+	 		}
+	 	}
+	}
+}
+
+.sc{
+	&-total-pages{
+		font-size: .875em;
+		@extend .text-align-right;
+		text-transform: uppercase;
+		color: $sc-light-grey-color;
+		&:after{
+			content: ' ';
+			height: 20px;
+		}
+	}
+}

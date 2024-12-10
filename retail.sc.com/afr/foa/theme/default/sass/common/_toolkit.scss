@@ -1,0 +1,176 @@
+$default-font: "SC Sans Web Regular", sans-serif;
+$default-sc-font:"SC Sans Web", sans-serif;
+$default-sc-font-light:"SC Sans Web Light",sans-serif;
+
+
+$default-sc-font-regular:"SC Sans Web Regular",sans-serif;
+$default-sc-font-thin:"SC Sans Web Thin",sans-serif;
+
+$default-font-weight: 200;
+$them-font: "SC Sans Web", sans-serif;
+$header-color: #333;
+$header-font-size: 1.25em;
+$normal-font-size: 1rem;
+$normal-font-color: #555;
+
+$instruction-font-size: 0.875em;
+$instruction-color: #9b9b9b;
+
+$table-normal-padding: 15px 0px;
+$table-header-color: #000;
+$table-header-background-color: #f6f6f6;
+$table-header-border: 3px solid #c3c3c3;
+$table-data-border-color: #f3f3f3;
+$helper-color: #9b9b9b;
+$helper-font-size: 0.875em;
+
+$button-small: 125px;
+$button-normal: 250px;
+$button-large: 375px;
+
+$button-default-color: #009FDA;
+$button-default-color-on-pressed: #2787c1;
+$button-primary-color: #6ac07a;
+$button-primary-color-on-pressed: #3f9c35;
+$button-disabled-color: #eee;
+
+$button-font-color: #fff;
+$button-font-color-disabled: #c5c5c5;
+
+@mixin header(){
+	font: initial;
+    font-family: $default-font;
+    //font-weight: $default-font-weight;
+    letter-spacing: 0.033em;
+    font-size: $header-font-size;
+    color: $header-color;
+    padding: 0px 0px 25px 0px;
+}
+
+/*
+@mixin button($type: default, $size: normal){
+
+	height: 46px;
+	width: $button-normal;
+	background-color: $button-default-color;
+	border: 1px solid $button-default-color;
+	color: $button-font-color;
+
+	&:active {
+		background:  $button-default-color-on-pressed;
+	}
+
+	@if $size == small {
+		width: $button-small;
+	}
+
+	@if $size == large {
+		width: $button-large;
+	}
+
+	@if $type == primary {
+		background-color: $button-primary-color;
+		border: 1px solid $button-primary-color;
+
+		&:active {
+			background-color:  $button-primary-color-on-pressed;
+		}
+	}
+
+	@if $type == disabled {
+		background-color: $button-disabled-color;
+		color: $button-font-color-disabled;
+		border: 1px solid $button-disabled-color;
+	}
+}
+*/
+@mixin table_header($type: main){
+	$_bgColor: $table-header-background-color;
+	$_color: $table-header-color;
+	$_borderBottom: $table-header-border;
+
+
+	@if $type == sub {
+		$_bgColor: #fafafa;
+		$_borderBottom: 0 solid #d7d7d7;
+	}
+
+	background: $_bgColor;
+	color: $_color;
+	border-bottom: $_borderBottom;
+	font-family: $them-font;
+	padding: 15px 0;
+	font-weight: bold;
+}
+
+@mixin table_data(){
+	color: $normal-font-color;
+	font-size: $normal-font-size;
+}
+
+@mixin clear_spacing(){
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+%header{
+	font: initial;
+    font-family: $default-sc-font-regular;
+    //font-weight: $default-font-weight;
+    letter-spacing: 0.033em;
+    font-size: $header-font-size;
+    color: $header-color;
+    padding: 0px 0px 25px 0px;
+}
+
+%header_no_border_bottom{
+	@extend %header;
+	border-bottom: none;
+}
+
+%instruction{
+	font-size: $instruction-font-size;
+	color: $instruction-color;
+}
+
+
+%table_header{
+	$_bgColor: $table-header-background-color;
+	$_color: $table-header-color;
+	$_borderBottom: $table-header-border;
+
+	background: $_bgColor;
+	color: $_color;
+	border-bottom: $_borderBottom;
+	font-weight: bold;
+}
+
+
+%table_sub_header{
+	$_color: $table-header-color;
+	$_bgColor: #fafafa;
+	$_borderBottom: 0 solid #d7d7d7;
+
+	background-color: $_bgColor;
+	color: $_color;
+	border-bottom: $_borderBottom;
+	font-size: .875rem;
+} 
+
+%table_data{
+	color: $normal-font-color;
+	font-size: $normal-font-size;
+}
+
+%clear_spacing{
+	padding: 0px;
+	margin: 0px;
+}
+
+%error_message {
+	color: tomato;
+	padding-bottom: 10px;
+	display: inline-block;
+}

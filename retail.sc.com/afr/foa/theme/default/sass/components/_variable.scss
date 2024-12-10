@@ -1,0 +1,104 @@
+
+
+/// Fonts
+$header-color: #333;
+
+$header-font-size: 1.25em;
+$normal-font-size: 0.875rem;
+$normal-font-color: #555;
+
+$table-normal-padding: 15px 0px;
+$table-header-color: #000;
+$table-header-background-color: #f6f6f6;
+$table-header-border: 3px solid #c3c3c3;
+$table-data-border-color: #f3f3f3;
+$helper-color: #9b9b9b;
+
+
+
+/// 
+/// @name .sc-variable
+/// @example <span class="sc-grey-color">1122</span>
+
+
+$sc-link-color: #009cda;
+$sc-error-bgcolor: #ffc;
+
+$sc-font-light: "SC Sans Web Light",sans-serif;
+$sc-font-regular: "SC Sans Web Regular",sans-serif;
+$sc-font-thin: "SC Sans Web Thin",sans-serif;
+$sc-font-ultra-thin: "SC Sans Web Ultra Thin",sans-serif;
+$sc-header-font: $sc-font-ultra-thin; 
+
+$sc-light-color: #fff;
+$sc-grey-color: #333;
+$sc-light-grey-color: #ACACAC;
+$sc-max-width: 980px;
+$sc-border-color: #E5E5E5;
+
+
+
+
+/**
+ * TABLE
+ */
+
+$sc-table-border-color: #E5E5E5;
+$sc-table-row-border-color: #E1E1E1;
+$sc-table-grey-color: #FCFCFC;
+$sc-table-tbody-th-color: #BDBDBD;
+$sc-table-tbody-th-size: .6875em;
+$sc-table-tbody-td-size: .75em;
+$sc-table-tbody-color: #555;
+$sc-table-default-padding-size: 22px;
+
+$sc-table-header-color: #9b9b9b;
+$sc-table-header-bg-color: #FCFCFC;
+$sc-table-header-font-size: .875em;
+$sc-table-header-text-transform: uppercase;
+
+
+
+//buttons
+
+$sc-button-small: 125px;
+$sc-button-mid-small: 170px;
+$sc-button-normal: 250px;
+$sc-button-large: 100%;
+
+$sc-button-default-color: #6AC075;
+$sc-button-default-color-on-pressed: lighten($sc-button-default-color, 10%);
+$sc-button-primary-color: #6AC075;
+$sc-button-primary-color-on-pressed: darken	($sc-button-primary-color, 10%);
+$sc-button-disabled-color: #eee;
+
+$sc-button-color-on-hover: darken($sc-button-default-color, 10%);
+$sc-button-font-color: #fff;
+$sc-button-font-color-disabled: #c5c5c5;
+$sc-button-font-style: uppercase;
+$sc-button-font-size: 12px;
+
+$sc-button-ghost-background: transparent;
+$sc-button-ghost-border-color: #76D9FB;
+
+
+/// LOGIN
+
+$sc-login-form-image: url( ../images/Green_Bg.jpg);
+$sc-login-additional-container-image: url( ../images/Blue_Bg.jpg);
+$sc-login-light-color: #FEFEFE;
+$sc-login-grey-color: #B3B3B3;
+$sc-login-light-blue-color: #1DBEF6;
+
+
+
+/* Colors */
+$_color-base-grey: #f6f6f6;
+$color-base_blue: #02b8f8; /* table header */
+$color-base_green: #6ac075;   /* button color */
+
+
+/* Padding */
+
+$sc-padding: 30px; 
+$sc-padding-normal: 22px; 

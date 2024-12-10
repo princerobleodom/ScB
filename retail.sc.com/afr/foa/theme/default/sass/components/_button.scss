@@ -1,0 +1,178 @@
+
+@mixin button($type: default, $size: normal){
+	height: 65px;
+	min-width: $sc-button-normal;
+	background-color: $sc-button-default-color;
+	border: 1px solid $sc-button-default-color;
+	border-radius: 0;
+	color: $sc-button-font-color;
+	text-transform: $sc-button-font-style;
+	font-size: $sc-button-font-size;
+	letter-spacing: 0.08em;
+	
+	&:active {
+		background-color:  $sc-button-default-color-on-pressed;
+	}
+
+	&:hover {
+		background-color:  $sc-button-color-on-hover;
+	}
+
+	@if $size == midsmall {
+		min-width: $sc-button-mid-small;
+	}
+
+	@if $size == small {
+		min-width: $sc-button-small;
+	}
+
+	@if $size == large {
+		width: $sc-button-large;
+	}
+
+	@if $type == primary {
+		background-color: $sc-button-primary-color;
+		border: 1px solid $sc-button-primary-color;
+
+		&:active {
+			background-color:  $sc-button-primary-color-on-pressed;
+		}
+	}
+
+	@if $type == ghost {
+		background: $sc-button-ghost-background;
+		border: 2px solid $sc-button-ghost-border-color;
+
+		&:active {
+			background-color:  $sc-button-ghost-background;
+		}
+	}
+
+	@if $type == disabled {
+		background-color: $sc-button-disabled-color;
+		color: $sc-button-font-color-disabled;
+		border: 1px solid $sc-button-disabled-color;
+
+		&:hover {
+			background-color:  $sc-button-disabled-color !important;
+		}
+	}
+}
+
+
+
+.btn {
+	&.default {
+		@include button(default);
+		&.large {
+			@include button(default,large);
+		}
+		&.small {
+			@include button(default,small);
+		}
+		&.mid-small {
+			@include button(default,midsmall);
+		}
+	}
+
+	&.primary {
+		@include button(primary);
+
+		&.large {
+			@include button(primary,large);
+		}
+		&.small {
+			@include button(primary,small);
+		}
+		&.mid-small {
+			@include button(primary,midsmall);
+		}
+	}
+
+	&.ghost {
+		@include button(ghost);
+
+		&.large {
+			@include button(ghost,large);
+		}
+		&.small {
+			@include button(ghost,small);
+		}
+		&.mid-small {
+			@include button(ghost,midsmall);
+			&:hover {
+				background-color: white;
+				border-color: #fff;
+				color:black;
+			}
+		}
+	}
+
+	&.disabled, &:disabled, &[disabled] {
+		@include button(disabled);
+		&.large {
+			@include button(disabled,large);
+		}
+		&.small {
+			@include button(disabled,small);
+		}
+		&.mid-small {
+			@include button(disabled,midsmall);
+		}
+
+
+	}
+
+	&.flat {
+		@extend .btn.ghost;
+		border: 1px solid $sc-button-default-color;
+		color: $sc-button-default-color;
+
+
+		&.proceed {
+			&:hover{
+				background-color: $sc-button-default-color!important;
+				color: #fff;
+			}
+		}
+
+		&:active {
+			background-color:  transparent;
+		}
+
+		&:hover {
+			background-color:  transparent;
+
+			border: 1px solid #acacac;
+			color: #acacac;
+		}
+	}
+}
+
+
+
+/**
+ * Buttons container
+ */
+.sc {
+	&-buttons {
+		//Hack to clear inline styles
+		&[style]{
+			padding: 25px 0px !important;
+		}
+
+		@extend .text-align-right;
+
+		.flat{
+			@extend .sc-float-left;
+		}
+	}
+}
+
+
+
+span.button {
+	input {
+		@extend .btn.default;
+	}
+}

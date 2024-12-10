@@ -1,0 +1,155 @@
+/** custom date picker style **/
+
+
+
+div.dp-popup {
+    background: #fefefe;
+    border: 1px solid #c3c3c3;
+    min-width: 300px;
+}
+
+div.dp-popup thead th {
+    background-color: #adadad;
+}
+
+div.dp-popup td.current-month{
+    background: #efefef;
+}
+
+div.dp-popup td.current-month.today, div.dp-popup td.dp-hover {
+    background: #afafaf;
+    color: inherit;
+}
+
+div.dp-popup td.other-month{
+    background: #fcfcfc;
+}
+
+div.dp-popup .other-month.disabled, div.dp-popup .current-month.disabled {
+    background: #fcfcfc;
+}
+
+div.dp-popup td.selected, div.dp-popup td.selected.today {
+    background: #009FDA;
+    /*    background: #FCFFFF;
+    border: 2px solid #a1a1a1;
+    background: none;
+    border-radius: 25px;
+    padding:4px;*/
+}
+
+
+div.dp-popup table.jCalendar {
+    border: none;
+    border-spacing: 0px;
+}
+
+#dp-popup {
+
+    .dp-nav-prev-year,
+    .dp-nav-next-year,
+    .dp-nav-next-month,
+    .dp-nav-prev-month {
+        //text-indent: -99999099px !important;
+        background-repeat: no-repeat;
+        margin-top: 2px;
+        width: 16px;
+        font-size: 1px;
+    }
+
+    .dp-nav-prev-year {
+        background-image: url(../images/icon/double-arrow-backward.png);
+        margin-left: 6px;
+    }
+
+    .dp-nav-prev-month {
+        background-image: url(../images/icon/arrow-backward.png);
+    }
+
+    .dp-nav-next-year {
+        width: 16px;
+        background-image: url(../images/icon/double-arrow-forward.png);
+        margin-right: 4px;
+    }
+    .dp-nav-next-month {
+        width: 12px;
+        background-image: url(../images/icon/arrow-forward.png);
+    }
+
+    .dp-nav-next {
+        right: 0px;
+    }
+}
+
+div.dp-popup h2 {
+    font-size: 14px;
+}
+
+table.jCalendar th {
+    padding: 14px 6px;
+    font: 14px Arial;
+}
+
+table.jCalendar td {
+    padding: 14px 6px;
+    font: 14px Arial;
+}
+
+#tooltip-target-1, #tooltip-target-2 {
+    img {
+        width: 13px;
+    }
+}
+
+
+
+
+
+/**
+ * Checkbox and Radio buttons
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-top: -3px;
+  margin-right: 4px; 
+  margin-left: -2px; 
+
+  height:22px;
+  width:22px;
+
+}
+
+
+/**
+ * Fixes for bold table header on table content
+ */
+
+table { 
+    tbody {
+        th {
+            font-weight: normal;
+        }
+    }
+}
+
+/**
+ * Add margin bototm for #productList
+ */
+#productList, #vschedulePaymentList {
+    margin-bottom: 20px;
+}
+
+
+
+/**
+ * Fix header for view standing orders
+ */
+
+#account_standing_orders{
+    .sc {
+        &.header {
+            background: none; 
+        }
+    }
+}

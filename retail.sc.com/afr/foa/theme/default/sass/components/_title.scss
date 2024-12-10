@@ -1,0 +1,39 @@
+/*
+title: Title
+name: Titles
+category: Text related - Titles
+*/
+.title{
+    padding-bottom: $sc-padding / 2!important;
+    font-family: $default-sc-font-thin!important;
+    font-size: 1.875em!important;
+    &--blue{
+        color: palette(blue,  mid-light)!important;
+        padding-bottom: $sc-padding / 2!important;
+        font-family: $default-sc-font-thin!important;
+        font-size: 1.875em!important;
+    }
+    &--green{
+        color: #6abf79!important;
+        padding-bottom: $sc-padding / 2!important;
+        font-family: $default-sc-font-thin!important;
+        font-size: 1.875em!important;
+        
+    }
+}
+
+%table-td-title{
+        font-family: $default-sc-font-light;
+        font-size: 22px;
+        color: palette(black, base);
+}
+
+%table-amount{
+    font-size:  26px!important;
+}
+.current-balance{
+    font-size: 0.75em;
+    color: #b5b5b5;
+    font-family: "SC Sans Web Light",sans-serif;
+    padding-top: 15px;
+}

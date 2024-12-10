@@ -1,0 +1,51 @@
+/**
+* OTP
+*/
+
+.sc{
+	&-otp{
+	font-size: .875em;
+	
+	&__label{
+		@extend .sc-bottom-padding-medium;
+		@extend .sc-top-padding-medium;
+		background-color: #ffc;
+	    margin-top: -18px;
+	    margin-left: -22px;
+	    padding-left: 23px;
+	    margin-bottom: 10px;
+		
+	}
+
+	&__textfield{
+		
+	}
+		&__grid{
+			@extend .sc-g;
+			@extend .sc-bottom-padding-medium;
+
+			&__col1{
+				@extend .sc-u-1-4;
+			}
+
+			&__col2{
+				@extend .sc-u-3-4;
+				
+				#resendButtonArea {
+					#buttonSpan{
+						input{
+							height: 46px !important;
+						}
+					}
+				}
+
+				& > div[style]{
+					padding: 0px 30px!important;
+
+				}
+			}
+		}
+
+
+	}
+}

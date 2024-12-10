@@ -1,0 +1,502 @@
+/* Cleanup of SC Login*/
+
+#page-login .footer .row965 {
+  max-width: $sc-max-width;
+}
+
+table.tbl_login td.login ul {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+#page-login .tbl_loginForm_layout .tbl_content_top.tbl_width_25 {
+  display: none;
+}
+
+#page-login table.tbl_login td {
+    background: none;
+    border: none;
+}
+
+
+
+/*
+*
+* header 
+* 
+*/
+
+#page-login * {
+  box-sizing: border-box;
+  font-size: 99%;
+}
+
+#page-login a:hover {
+	color:#6ac075 !important;
+}
+
+#page-login .footer a:hover, .footer a:hover {
+    color: #8c8c8c !important;
+}
+
+#page-login .sign-up-container .item-details:hover {
+	background-color: transparent;
+	border-color: #6AC075;
+}
+
+.item-details:hover {
+	border-color: #f7fbfb;
+}
+
+#tnc-page *, #logout-page * {
+	box-sizing: border-box;
+}
+
+#page-login, #logout-page, #tnc-page {
+
+  font:initial;
+  font-family: $sc-font-regular;
+  font-weight: 300 !important;
+  letter-spacing: 0.033em;
+  padding-bottom: 357px;
+
+  .username-list {
+  	height: 60px;
+  }
+  
+  h1 {
+    font-size: 3.167em; 
+    font-family: $sc-header-font; 
+    font-weight: 100;
+    letter-spacing: 0.009em;
+    margin: 0px 0px 30px 0px;
+    line-height: 1.2em;
+  }
+
+  .prelogin-header {
+    background: #fff;
+    height: 92px;
+  }
+
+
+  .header_wrapper {
+    background: none;
+    .row {
+      max-width: $sc-max-width;
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+
+  .scbNav {
+    padding-top: 37px;
+    a{
+      padding-left: 40px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      background: url(../images/icon/Icon_Help.png);
+      background-repeat: no-repeat;
+      color: $sc-grey-color;
+      font-size: 18px;
+      font-family: $sc-font-light;  
+      letter-spacing: 0.031em;
+
+    }
+  }
+
+
+  .scbLogo {
+    padding: initial;
+    display: inline-block;
+  }
+
+  /**
+   * Login Box Containers
+   */
+  
+  .login-form {
+    padding-left: 34px; // fix center position
+    background-image: $sc-login-form-image ;
+    background-size: cover;
+
+    h1 {
+        font-family: $sc-font-thin;
+        font-size: 52px;
+        line-height: 1em;
+        letter-spacing: 0.01em;
+    }
+
+    .login h1 {
+      text-align: center;
+      color: $sc-login-light-color;
+      font-stretch: initial;
+      padding-top: 0;
+    }
+  }
+
+  .sign-up-container > h1, 
+  .additional-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .login-form, .sign-up-container, .additional-container {
+    margin:0 auto;
+    padding: 63px 40px;  
+  }  
+  
+  /**
+   * Maintenance / Error container
+   */
+  
+  .error-container {
+    background: #FFFFCD;
+    border-top: 1px solid #EDEDEF;
+    border-bottom: 1px solid #EDEDEF;
+    margin: 0 auto;
+
+    .login-error {
+      padding-bottom: 0px; 
+      color: #E54746;
+      font-family: $sc-font-regular;
+      font-size: 14px;
+      padding-left: 50px;
+    }
+
+    &-message {
+      padding:25px 0;
+      width: 540px;
+      margin: 0 auto;
+      background-image: url(../images/icon/Icon_Error.png);
+      background-repeat: no-repeat;
+      background-size: 30px;
+      background-position: 0 50%;
+    }
+  }
+
+  .sign-up-container, .additional-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .notes {
+      padding: 0;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: .875em;
+      line-height: 1.4em;
+    }
+  }  
+
+
+  .sign-up-container {
+    padding-top: 43px;
+    padding-bottom: 25px;
+    color: $sc-login-grey-color;
+
+    a {
+      color: $sc-grey-color;    
+    }
+
+    h1 {
+      //a {
+        color: $sc-login-light-blue-color;
+      //}
+    }
+    
+    .icon {
+      @extend .text-align-right;
+    }
+
+    .options {
+      @extend .sc-g;
+      width: 680px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+
+      &-item {
+        cursor: pointer;
+        width: 340px;
+        padding: 8px;
+        @extend .sc-u-1-2;
+      }
+
+
+    }
+
+    .item-details {
+      @extend .sc-g;
+      border: 2px solid #EDEDED;
+      padding: 11px 20px;
+      min-height: 90px;
+      color: $sc-grey-color;
+
+
+      div {
+        &.icon {
+          line-height: 64px;
+          img {
+            vertical-align: middle;
+          }
+        }
+        &.desc {
+          padding: 5% 10px;
+          text-transform: uppercase;
+          font-size: 12px;
+          line-height: 1.52em;
+        }
+      }
+    }
+ 
+    em {
+      font-style: normal;
+      color: $sc-grey-color;
+    }
+  }
+
+  .additional-container {
+    padding-top: 47px;
+    padding-bottom: 50px;
+    background-image: $sc-login-additional-container-image;
+    background-size: cover; 
+    color: $sc-login-light-color;
+    h1 {
+      margin-bottom: 20px;
+      a {
+        color: inherit;
+        &:hover {
+        	color:#6ac075 !important;
+        }
+      }
+      
+    }
+
+    .options {
+      @extend .sc-g;
+      margin: 30px 0;
+      padding-top: 2px;
+
+      &-item {
+        @extend .sc-u-1-2;
+        input {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .inline-error-container {
+    margin: 0px;
+    //text-align: center;
+    //padding: 0px;
+  
+    
+    font-family:  $sc-font-regular;
+    //background: rgba(255,255,204,.4);
+    background: rgba(162,48,35,.6);
+    margin-top: 63px;    
+    margin-bottom: -63px;    
+    margin-left: -40px;
+    margin-right: -40px;
+    
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    &__message {
+      max-width: 980px;
+      line-height: 23px;  
+      padding: 0px;
+      color: #fff;
+      font-size: 14px;
+      padding-left: 40px;
+      display: inline-block;
+      background-image: url(../images/icon/Icon_Exclamation_Grey.png);
+      background-repeat: no-repeat;
+      background-size: 25px 25px;
+      //margin-top: 5px;
+      padding-top: 2px;
+    }
+  }
+
+
+  .deleted-inline-error-container {
+
+
+    margin: 0px;
+    text-align: center;
+    padding: 0px;
+    height: 35px;
+    margin-top: -35px;
+    padding-bottom: 0px;
+    font-family:  $sc-font-regular;
+    background: rgba(162,48,35,.6);
+    
+    
+    
+    &__message {
+      line-height: 23px;  
+      padding: 0px;
+      color: #fff;
+      font-size: 14px;
+      padding-left: 30px;
+      display: inline-block;
+      background-image: url(../images/icon/Icon_Exclamation_Grey.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-top: 5px;
+      padding-top: 2px;
+    }
+  }
+
+
+  /* changes for the login error message*/
+  /* @todo - fix the login error message based from the css below */
+  /*
+      margin: 0px;
+    text-align: center;
+    padding: 0px;
+    
+    padding-bottom: 0px;
+    font-family: "SC Sans Web Regular",sans-serif;
+    background: rgba(162,48,35,0.6);
+    margin-top: -63px;
+    margin-bottom: 63px;
+    margin-left: -40px;
+    margin-right: -40px;
+  */
+  .security_tips {
+    
+    .sc-g {
+      padding-top: 18px;
+      width: 480px;
+      margin: 0 auto;
+      color: $sc-login-light-color;
+
+      [class*="sc-u"] {
+        font-family: $sc-font-regular;
+        line-height: 1.3em;
+        letter-spacing: 0.025em;
+
+        a {
+          color: inherit;
+          &.security-tip-link  {
+            background-image: url(../images/icon/Icon_Link.png);
+            background-repeat: no-repeat;
+            padding-left: 29px;
+            padding-top: 6px;
+            padding-bottom: 10px;
+
+          }
+        }
+
+      }
+    }
+  }
+
+  .tbl_login ul li
+  {
+    margin-bottom: 11px;
+    text-align: center
+  }
+
+  .login_button > .button > input {
+    width: 480px;
+    margin-left: -1px;
+    height: 65px;
+    line-height: 1em;
+
+    font: initial;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: lighter; 
+
+    background-color: #6AC075;
+    border: 1px solid #6AC075;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    
+    &:hover {
+    	background-color: #49ae56;
+		  color:white;
+    }
+
+    &:disabled {
+      background-color: $sc-button-disabled-color;
+      color: $sc-button-font-color-disabled;
+      border: 1px solid $sc-button-disabled-color;
+    }
+  }
+
+
+  .tbl_login input[type=text], 
+  .tbl_login input[type=password]{
+    width: 480px;
+    height: 65px;
+    border-radius: 0px;
+    background: #fff;
+    padding: 13px 15px;
+    padding-left: 135px;
+    padding-right: 14px;
+    padding: 22px 14px 22px 135px;
+    margin-left: -85px;
+    font-size: 16px;
+  }
+
+  .tbl_login label {
+    display: inline-block;
+    width: 80px;
+    padding: 15px 0px 0px 24px;
+    text-align: initial;
+    position: relative;
+    right: -2px;
+    top: 2px;
+    
+    font:initial;
+    font-family: $sc-font-regular;
+    font-weight: 400 !important;
+    letter-spacing: 0.023em;
+  }
+}
+
+
+
+/** input placeholder **/
+
+::-webkit-input-placeholder {
+  font:initial;
+    color: #cfcfcf;
+    font-family: $sc-font-regular;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font:initial;
+    color: #cfcfcf;
+    font-family: $sc-font-regular;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    font:initial;
+    color: #cfcfcf;
+    font-family: $sc-font-regular;
+}
+
+:-ms-input-placeholder {  
+    font:initial;
+    color: #cfcfcf;
+    font-family: $sc-font-regular;
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}

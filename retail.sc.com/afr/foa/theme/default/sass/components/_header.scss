@@ -1,0 +1,229 @@
+#user-profile * {
+	box-sizing: border-box;	
+}
+
+#user-profile, #apply-menu, #getHelp-menu {
+	width: 350px;
+}
+#user-profile{
+
+	.profile-top-arrow{
+		position: absolute;
+		z-index: 9999;
+		margin-top: -8px;
+		margin-left: 35px;
+	}
+	.profile-header{
+    	height: 130px;
+    	background: #F6F6F6;
+    	padding: 10px 20px 10px 2px;
+		&__img__container{
+
+		}
+		&__avatar{
+			width: 4em;
+			line-height: 70px;
+		}
+		&__username{
+			font-size: 1.4em;
+		 	font-family: SC Sans Web Light;
+			color: $sc-grey-color;
+			line-height: 60px;
+		}
+	}
+
+	#profile-footer{
+		
+		padding: 15px 15px 20px 15px; 
+		background-color: #494949; 
+		height: 100px; 
+		margin: 0 auto; 
+		text-align: center;
+	}
+}
+
+
+.profile-items{
+	width: 100%; 
+	margin-bottom: 5px;
+
+	a {
+		display: block;
+		padding: 10px 20px 10px 20px;
+		color: #919191;
+		font-family: "SC Sans Web Light", sans-serif;
+		font-size: 0.875em;
+		//font-weight: bold;
+		
+		&:hover{
+			color: #000000;
+		}
+	}
+}
+
+a.menu-title{
+	cursor: default;
+}
+
+.menu-block {
+	width: 31%; float: left; padding-bottom: 35px; padding-left: 30px; box-sizing: border-box;
+}
+
+.menu-block:nth-child(6) {
+	width: 38%;
+}
+.logout-btn{
+	width: 100%;
+    height: 58px;
+    color: white;
+    border: 2px solid #737373;
+    font-family: "SC Sans Web Regular", sans-serif;
+    font-size: 11px;
+    box-sizing: border-box;
+}
+.logout-btn a{
+	color: white;
+}
+
+.logout-btn:hover{
+	border-color: #e34746;
+	background-color: #e34746;
+    a {
+        color: #fff !important;
+    }
+}
+
+.logout-btn:hover a {
+	color:black;
+}
+.last-login-date {
+	margin-top: 5px;
+    color: white;
+    font-size: .625em;
+    font-family: "SC Sans Web Regular", sans-serif;
+    letter-spacing: 0.05em;
+    
+}
+.logo-inside a {
+	color: #000;
+	margin-left: 20px;
+	font-family: "SC Sans Web Light", sans-serif;
+    font-size: 19px !important;
+    
+    &.selected {
+    	color: #6abf79;
+    }
+    
+    &:hover {
+    	color: #6abf79;
+    }
+}
+
+#menu {
+	padding-bottom: 42px;
+    position: relative;
+}
+
+#user-profile, #apply-menu, #getHelp-menu {
+	width: 350px; 
+    margin-top: -61px; 
+    box-shadow: rgb(188, 188, 188) 1px 1px 1px; 
+    position: absolute; 
+    margin-left: 2.8em; 
+    z-index: 1000; 
+    background-color: rgb(255, 255, 255);
+    display:none;
+}
+#apply-menu {
+	margin-left: 18.8em;
+}
+#getHelp-menu {
+	margin-left: 34.3em;
+}
+
+#user-profile {
+	margin-left:0em;
+}
+
+.username-list{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 130px;
+    max-width: 380px;
+    padding: 23px 0 10px 0px;
+    white-space: nowrap;
+    border-right: 1px solid #F3F3F3;
+    height: 30px;
+    position: relative;
+    padding-bottom: 27px;
+
+    &_container {
+		max-width: 360px;
+		overflow: hidden;
+    }
+
+}
+
+.icon-user {
+	// position: relative;
+ //    left: 4px;
+}
+
+.logo-inside {
+	float:left; margin-top:16px;
+}
+
+#dashboard {
+	display: inline;
+}
+
+#down-arrow {
+	position:relative; top: -2px;;
+}
+
+#up-arrow {
+	position:relative; top: -2px;display: none;
+}
+
+.profile-items {
+	width: 100%; margin-bottom: 15px;
+}
+
+.white-indicator {
+	position: absolute;z-index: 9999;margin-top: -9px;margin-left:20px;
+}
+
+.menu-list {
+	box-shadow: rgb(188, 188, 188) 1px 1px 1px; background:#fff; min-height: 395px; display: none; margin-top:-60px;position: absolute; width: 100%;z-index: 1000;
+}
+
+.menu-sub-block {
+	margin-top: 35px; float: left; clear:right;
+}
+
+.menu-image {
+	width: 50px; float: left; height: 100%;
+}
+
+.page-icon{
+	height: 30px;
+}
+
+.menu-item {
+	padding: 0 20px; border-left: 1px solid #F3F3F3; float:left; line-height: 24px;
+}
+
+.mail-icon {
+	float:right; width:9%;
+}
+
+.menu-title {
+    color: #6abf79 !important;
+    font-family: SC Sans Web Light;
+    font-size: 19px;
+}
+
+#getHelp {
+	position: relative;
+    padding-bottom: 42px;
+}

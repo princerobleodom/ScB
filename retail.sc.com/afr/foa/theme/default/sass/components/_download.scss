@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+
+.sc {
+	&-filter-toggle {
+		cursor: pointer;
+		padding-right: 25px;
+
+		background-image: url(../images/icon/arrow-down-icon.gif);
+		background-repeat: no-repeat;
+		background-position: right center;
+
+		&.up {
+			background-image: url(../images/icon/arrow-up-icon.gif);
+		}
+	}	
+
+	&-page-helper-container {
+		font-size: 12px;
+		color: $sc-light-grey-color;
+		vertical-align: bottom;
+		text-transform: uppercase;
+		font-family: $sc-font-light;
+		margin-top:18px;
+	}
+
+
+	&-normal-block, &-block {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
