@@ -1,0 +1,99 @@
+body {
+    background-color:#f6f6f6!important; color:$normal-font-color; font-size: 16px;}
+.tbl_header{
+   background-color:#f6f6f6!important;
+}
+.tbl_layout{
+    width: 100%;
+}
+.left-menu{
+    display:none;
+}
+
+
+.navigation-header{
+    background-color: #fff;
+    height: 65px;
+    padding-top:15px;
+    padding-bottom:15px;
+    border-bottom: 1px solid #F1F1F1;
+    .nav{
+    background-color: #fff;
+    display:block;
+    width:100%;
+    height: 50px;
+    }
+
+}
+
+.normal-text{
+    color: #000;
+}
+
+.username-text{
+    font-size: 15px;
+    float: left;
+    font-weight: 500;
+    //text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+    //width: 90px;
+    margin-top: -1px;
+    margin-left: 2px;
+    margin-right: 0px;
+    color: #6abf79 !important;
+    font-family: 'SC Sans Web Light';
+}
+
+.unread-mail{
+    color: white;
+    float: right;
+    font-size: 14px;
+    font-family: SC Sans Web Light;
+    margin-right: 20px;
+    background: transparent url("../../../theme/default/images/menu/email-circle.png") no-repeat scroll 0px 0px;
+    width: 20px;
+    height: 22px;
+    padding: 3px 0px 0px 0.45em;
+    box-sizing: border-box;
+    margin-top: -2px;
+    
+}
+#menu-list .child-item a {
+    font-size: 14px;
+    color: #919191;
+    font-family: "SC Sans Web Regular", sans-serif;
+}
+#menu-list .child-item a:hover {
+    color: #000000;
+}
+/*.profile-items a {
+
+    display: block;
+
+    padding: 25px 20px 10px 20px;
+    color: #000;
+    font-family: "SC Sans Web Light", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}*/
+.profile-items .unread-mail {
+    margin-right: 240px;
+    margin-top: 1px;
+    padding-left: 6px;
+}
+
+@-moz-document url-prefix() { 
+
+    .unread-mail {
+        background-position: 0 2px;
+    }
+
+}
+
+/* .footer .footer_wrapper {background-color:#3c3c3c; color:#fff;}
+.footerDetails div.badges a.badge_apple {
+    width:135px;height:40px;
+    background:url('../images/icon/Download_on_the_App_Store_Badge_US-UK_135x40.png');
+   
+}*/ 

@@ -1,0 +1,455 @@
+
+/**
+ * RAL
+ */
+.ral-page .sc-buttons{
+    padding-bottom: 80px;
+  }
+  .sc-block{
+        font-size: 14px !important;
+    color: #888;
+
+  }
+.sc-interested-block {
+    
+    font-size: 20px!important;
+    color: #333;
+    font-family: "SC Sans Web Light";
+}
+.sc-cross-selling_col2 {
+    letter-spacing: 0.06em !important;
+    font-size: 14px!important;
+    color: #888;
+    line-height:18px;
+}
+#ral-page {
+  //@extend %sc-tbl;
+  
+  .sc-u-1-2 {
+    
+    width: 46%;
+  }
+  padding: 0;
+  .line-break{
+    border-top: 1px solid #f2f2f2;
+  }
+  
+  .ral-centered-content {
+   
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .div_padding 
+  {padding: 18px 30px 15px 30px;}
+  .div_padding-top{padding:0 30px;}
+  &.tnc {
+    #onlineRegistrationForm {
+      .row_header *, .row_header{
+        font-size: 21px;
+      }
+    }
+
+    .boxgrysml {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 12px;
+    }
+  }
+
+  .txt_highlight {
+    padding-bottom: 4px;
+    font-size: 1.125em;
+  }
+
+  .header {
+    background: #f9f9f9;
+    height: 52px;  
+    .nav {
+      display: none;
+}
+
+    .header_wrapper {
+      background: none;   
+
+      .row {
+        max-width: 940px;
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .pre-login-header {
+
+    .scbLogo {
+      margin: 0;
+      padding: 0;
+       img{
+        margin: 0;
+        padding: 0;
+        height: 29px;
+        padding: 12px 0 0 0px;
+      }
+    }
+  }
+
+  input[type=radio], input[type=checkbox] {
+    margin-top: -2px;
+    margin-top: -8px\9;
+  }
+
+  .row965 {
+    max-width: initial;
+  }
+
+  .ral-container {
+    min-height: 100%;
+    position: relative;
+    background: #fff;
+
+    .sc-steps {
+      width: 650px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+    }
+  }
+
+  .content {
+    padding-bottom: 200px;
+    .row965 {
+      max-width: 940px;
+    }
+  }
+
+  .footer {
+    margin-top: 0px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+    .row965 {
+      max-width: 940px;
+    }
+  } 
+
+  .sc-tbl .sc-tip-box {
+    td,th {
+      background: #efefef;
+    }
+  }
+
+
+
+  .ral-form {
+    @extend .sc-tbl;
+    
+    margin: 0 auto;
+    #enterNo, #enterPin, #idCvv2{
+      input {
+        width: 95%;
+      }
+    }
+
+    input {
+      &#temporaryId, &#temporaryPassword {
+        width: 95%;
+      }
+    }
+
+    
+    > tbody {
+      > tr {
+        > td{
+          padding: 25px 0px !important;
+
+          &:first-child {
+            padding-left: 25px !important;
+            padding-right: 0 !important;
+          }
+
+          &:last-child {
+            padding-left: 25px !important;
+            padding-right: 0 !important;
+          }
+        }
+      }
+    }
+
+    > tfoot {
+      background: none;
+
+      > tr {
+        background: none;
+        td {
+          background: none;
+        }
+      }
+    }
+  }
+
+  .tnc_and {
+
+    font-weight: bolder;
+    font-size: 16px;
+    color: $normal-font-color;
+  }
+  .tnc_icon {
+    vertical-align: top;
+  }
+
+  .tnc_icon{
+    padding-right : 10px;
+    
+  }
+  .tnc_and {
+    padding-top: 35px;
+    letter-spacing: -1px;
+    padding-right: 30px;
+    
+  }
+
+  .tnc_col1, .tnc_col2 {
+    vertical-align: top;
+    font-size: .875em;
+  }
+
+  .instant-tip-col-2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .instant-tip-col-2 {
+    .sc-u-1-2 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+
+  }
+
+  #tbl_mobile .txtBig {
+      color: #555;
+    font-size: 26px !important;
+  }
+
+  .quick_tips_box {
+    background: #f0f0f0 !important;
+    table {
+      td,th {
+        background: #f0f0f0 !important;
+        border-bottom: none;
+      }
+    }
+  }
+
+  #tbl_Credentials{
+    input[type=text], 
+    input[type=password] {
+      width:94%;
+    }
+  }
+
+  #tbl_credential {
+    input[type=text], 
+    input[type=password] {
+      width:94%;
+    }
+  }
+
+  #idQuickTips {
+    & > table {
+      & > tr > td {
+        background: red; 
+        
+      }
+    }
+  }
+
+
+}
+
+.tooltip-container {
+  td {
+    padding-bottom: 4px;
+  }  
+}
+
+.sc-steps {
+  
+
+  .grey {
+    display: inline-block;
+    
+  }
+  .blue {
+    display: none;
+  }
+
+  &.step-1 {
+    .step-1 {
+      color: #8AD2EE;
+      img {
+        &.grey {
+          display: none;
+        }
+        &.blue {
+          display: inline-block;
+
+        }
+      }
+    }
+  }
+
+  &.step-2 {
+    .step-2 {
+      color: #8AD2EE;
+      img {
+        &.grey {
+          display: none;
+        }
+        &.blue {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  &.step-3 {
+    .step-3 {
+      color: #8AD2EE;
+      img {
+        &.grey {
+          display: none;
+        }
+        &.blue {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  &.step-4 {
+    .step-4 {
+      color: #8AD2EE;
+      img {
+        &.grey {
+          display: none;
+        }
+        &.blue {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  &.step-5 {
+    .step-5 {
+      color: #8AD2EE;
+      img {
+        &.grey {
+          display: none;
+        }
+        &.blue {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .hr {
+    height: 25px;
+    border-bottom: 3px solid #EDEDED;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &.total-3-step {
+    .hr {
+      width: 70%;
+    }
+  }
+
+  .steps {
+    position: relative;
+    top:-14px;
+    display:table;
+    width: 100%;
+    table-layout: fixed;
+
+    .step {
+      display: table-cell;
+      text-align:center;
+      //font-weight: bold;
+      img {
+        background: #F6F6F6;
+        padding:6px;
+      }
+    }
+  }
+}
+
+
+.sc{
+  &-tbl-ral{
+   
+    margin: 0 auto;
+  }
+}
+
+
+.ral-text-des{
+  font-size: .875rem;
+  text-transform: none!important;
+}
+#ral-page{
+  #selectRegTypeSpan{
+    font-size: .875rem;
+    color: #9b9b9b;
+  }
+  table{
+    > tbody{
+      > tr{
+          &.error-container {
+          background-color: #ffc !important;
+          
+          td {
+            padding: 10px 0;
+            background: none;
+            
+            color: #9b9b9b;
+            div{
+               text-transform: none!important;
+            }
+            .error-container__message {
+              padding: 10px 0;
+              background: transparent;
+              color: #2c2c2c;
+              background-image: url("../images/icon/dynamic/error.png") !important;
+              background-position: left center;
+              background-repeat: no-repeat;
+              padding-left: 30px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.title-padding-top{
+    padding-top: 60px;
+  }
+
+.title-padding-top-medium{
+  padding-top: 35px;
+
+  @extend .sc-bottom-padding-small;
+}
+#ral-page  { .success {
+  td:nth-child(2){
+    
+     background-position: 25px center!important;
+
+  }
+  }
+}

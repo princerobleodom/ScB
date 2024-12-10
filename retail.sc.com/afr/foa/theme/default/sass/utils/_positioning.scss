@@ -1,0 +1,143 @@
+
+$sc-padding-small: 20px * .25;
+$sc-padding-medium: 20px * .50;
+$sc-padding-large: 20px * 1;
+
+.sc{
+	&-float-left {
+		float: left !important;
+	}
+
+	&-float-right {
+		float: right !important;
+	}
+}
+
+.sc{
+	&-left-padding-small{
+		padding-left: $sc-padding-small!important;
+	}
+
+	&-right-padding-small{
+		padding-right: $sc-padding-small!important;
+	}
+
+	&-left-padding-medium{
+		padding-left: $sc-padding-medium!important;
+	}
+
+	&-right-padding-medium{
+		padding-right: $sc-padding-medium!important;
+	}
+
+	&-left-padding-large{
+		padding-left: $sc-padding-large!important;
+	}
+	&-right-padding-large{
+		padding-right: $sc-padding-large!important;
+	}
+
+
+
+	&-bottom-padding-small{
+		padding-bottom: $sc-padding-small!important;
+	}
+
+	&-top-padding-small{
+		padding-top: $sc-padding-small!important;
+	}
+
+	&-bottom-padding-medium{
+		padding-bottom: $sc-padding-medium!important;
+	}
+
+	&-top-padding-medium{
+		padding-top: $sc-padding-medium!important;
+	}
+
+	&-bottom-padding-large{
+		padding-bottom: $sc-padding-large!important;
+	}
+	&-top-padding-large{
+		padding-top: $sc-padding-large!important;
+	}
+
+
+
+	/*
+	* Clear padding
+	*/
+
+	&-no-side-padding{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	&-no-top-padding{
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
+	}
+
+	&-no-padding {
+		padding:0px !important;
+	}
+
+
+	/*
+	* Set vertical padding
+	*
+	*/
+
+	&-vertical-padding {
+		padding-left: $sc-padding-large;
+		padding-right: $sc-padding-large;
+
+		&-normal,&-large {
+			padding-left: $sc-padding-large;
+			padding-right: $sc-padding-large;
+		}
+		&-half {
+			padding-left: $sc-padding-medium;
+			padding-right: $sc-padding-medium;
+		}
+
+		&-small {
+			padding-left: $sc-padding-small;
+			padding-right: $sc-padding-small;
+		}
+	}
+
+
+
+	/**
+	 * Horizontal Padding
+	 */
+	&-horizontal-padding {
+		padding-top: $sc-padding-large;
+		padding-bottom: $sc-padding-large;
+
+		&-normal, &-large {
+			padding-top: $sc-padding-large;
+			padding-bottom: $sc-padding-large;
+		}
+		&-half {
+			padding-top: $sc-padding-medium;
+			padding-bottom: $sc-padding-medium;
+		}
+
+		&-small {
+			padding-top: $sc-padding-small;
+			padding-bottom: $sc-padding-small;
+		}
+	}
+
+
+	/*
+		Border manipulation
+	*/
+
+	&-border-none {
+		border: none!important;	
+	}
+
+}

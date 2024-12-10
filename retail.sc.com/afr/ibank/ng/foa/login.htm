@@ -1,0 +1,727 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "/WEB/INF/xhtml1-strict.dtd">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+    
+    
+
+
+
+
+<html>
+
+<head>
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8" />
+<meta http-equiv="CACHE-CONTROL" content="NO-STORE" />
+<meta http-equiv="PRAGMA" content="NO-CACHE" />
+<meta http-equiv="EXPIRES" content="-1" />
+<title>Standard Chartered Online Banking | NG</title>
+ <link rel="stylesheet" type="text/css"
+	href="/afr/foa/theme/default/css/style.css" media="all" /> 
+<link rel="stylesheet" type="text/css"
+	href="/afr/foa/theme/default/css/button.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/afr/foa/theme/default/css/normalize-3.0.2.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="/afr/foa/theme/default/css/style_afr.css" media="all"/>
+    
+    
+
+ 
+<script type="text/javascript">
+	var userLang = "en_NG";
+	var requestId = '82773DDE-FE5D-578D-916C-CD5E4DB9B23B';
+</script>
+<script type="text/javascript" src="/afr/js/jquery-3.6.0.js?2412091320"></script>
+
+<script type="text/javascript" src="/afr/js/common.js?2412091320"></script>
+<script defer async src="https://www.sc.com/global/assets/global/_u.js?2412091320"></script>
+<script type="text/javascript" src="/afr/js/scbt.js?2412091320"></script>
+
+<script type="text/javascript">
+
+	$(function(){
+		$('#command').on( "submit",function(e){
+			$('#login-btn').prop('disabled', true);
+			submitForm();
+		});
+	})
+	function submitLoginForm() {
+
+		var form = document.loginForm;
+		try {
+			var submitBtn = document.getElementByID('login-btn')[0];
+			
+			if (submitBtn != null)
+				submitBtn.disabled = true;
+		} catch (e) {
+		}
+		//form.submit();   
+		submitForm();
+	}
+
+	function setCursor() {
+		document.forms[0].j_username.focus();
+	}
+	Set_Cookie('sc-parent-menu','Accounts');
+	
+
+	 // Check Browser
+	 var browser=get_browser_info();
+	 
+
+ 	$(function(){
+		$('.close').on("click", function (){
+			$('#browser-warning').css('z-index',-100);
+		})
+	})
+
+
+	 if(browser.name == 'Chrome' && browser.version < 43
+	 	|| browser.name == 'Safari' && browser.version < 8
+	 	|| browser.name == 'Firefox' && browser.version < 38
+	 	|| browser.name == 'MSIE' && browser.version < 9) {
+	 	window.location="login.htm?a=doUpGrade";
+	 }
+
+	 else if(browser.name == 'Firefox' && browser.version == 38
+	 	|| browser.name == 'Firefox' && browser.version ==39
+	 	|| browser.name == 'MSIE' && browser.version == 9) {
+
+	 		if(!Get_Cookie('is-showed-popup')) {
+			 	$('#browser-warning').css('z-index',99999);
+			 	window.location.hash = 'browser-warning';
+			 	Set_Cookie('is-showed-popup','true');
+			} else {
+				$(function(){
+		 			$('#browser-warning').hide();
+		 			$('#browser-warning').remove();
+		 		})
+			}
+	 }
+	 
+	 else if(browser.name == 'MSIE' && browser.version > 9){
+ 		$(function(){
+ 			$('.modalDialog').remove();
+ 		})
+	 }
+	
+
+
+</script>
+<script type="text/javascript">
+var country = 'NG';
+	country = country.toLowerCase();
+</script>
+
+		
+		
+		
+		
+			
+			<script type="text/javascript">
+				scbt.profile("svc2.sc.com", "b37tmm2a", "2af4e0ac6180d968890f6a2804f9ba956a19cd0ad15cb8b778b50d5e6983f64e", "234101");
+			</script>
+		
+
+</head>
+
+<body id="login-page"
+	onload="startSessionTimer('900', '/afr/ibank/ng/foa'); validateCookies(); processLinks();"
+	style="background: #f6f6f6;">
+	
+	
+	<div id="page-login" class="scbFramework01" style="background-color: #fff">
+	
+
+		
+
+<script type="text/javascript">
+    // $(function() {
+    //     function profileMouseOver() {
+    //         $(".selected").removeClass("selected");
+    //         $("#user-profile").show();
+    //         $("#up-arrow").hide();
+    //         $("#down-arrow").show();
+            
+    //         $(".menu-list").hide();
+    //         $("#getHelp-menu").hide();
+    //         $("#apply-menu").hide();
+    //     }
+
+    //     function profileMouseOut() {
+    //         $("#user-profile").hide();
+    //         $(".selected").removeClass("selected");
+    //     }
+
+    //     $('.username-list, #user-profile').bind('mouseover', function(e){
+    //         profileMouseOver();
+    //     });
+
+    //     $('#user-profile').bind('mouseout', function(e){
+    //         profileMouseOut();
+    //     });
+
+    //     $('.username-list').bind('click', function(e) {
+    //         profileMouseOver();
+
+    //         $('html').one('click', function() {
+    //             profileMouseOut();
+    //         });
+
+    //         e.stopPropagation();
+    //     });
+
+    // });
+</script>
+<div class="navigation-header" style="padding-bottom: 75px;">
+    <div class="row960 logo">
+        <div class="username-list" style="float:left">
+                <a href="#" class="menu-title" style="font-size: 14px; float: left;font-weight: bold; text-align: center; width: 100%;">
+				Nigeria&nbsp;								   
+                    <!-- <img id="down-arrow" src="/afr/foa/theme/default/images/menu/iconChevronDown.png" style="position:relative; top: -1px;"/>
+                    <img id="up-arrow" src="/afr/foa/theme/default/images/menu/iconChevronUp.png" style="position:relative; top: -1px;display: none"/> -->
+                </a>
+        </div>
+
+        <div class="logo-inside" style="float:left; margin-top:20px; width: 50%">
+            
+            <a target="_scbtab" href="https://www.sc.com/ng/personal/apply-online" class="normal-text">
+            	Apply
+            </a>
+			
+            <a target="_scbtab" id="getHelp" href="https://www.sc.com/ng/help-centre/">
+                Get Help
+            </a>
+
+        </div>
+
+        <div class="floatRight">
+            <a href="#" class="scbLogo">
+                <img src='/afr/foa/theme/default/images/logo/scblogo.png' alt="SCB Logo" />
+            </a>
+        </div>
+    </div>
+
+</div>
+		
+
+
+			
+		
+
+		
+		
+		<div class="row mainContainer login-form">
+		
+			<form id="command" name="loginForm" action="security_check.htm" method="post" onsubmit="return checkSubmit();">
+				
+				<table class="" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="tbl_content_top tbl_width_75">
+							<table class="tbl_login" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
+								 <!-- http://stackoverflow.com/a/3306903/1378852 to make ie8 obey col width -->
+                                <colgroup>
+                                    <col width="50%" />
+                                    <col width="50%" />
+                                </colgroup>
+                                
+								<tr>
+									<td colspan="2" class="login">
+										<h1>
+											Sign in to online banking
+										</h1>
+											<ul>	
+												<li class="row_error hide">
+													
+												</li>										
+												<li class="username">
+
+                                                    <label>Username</label>
+                                                    <input type="text" id="j_username" name="j_username" maxlength="16" size="18" autocomplete="off" placeholder="Case sensitive username" autocapitalize="off"/>
+                                                </li>
+                                                <li class="password">
+                                                    <label>Password</label>
+                                                    <input type="password" id="j_password" name="j_password" maxlength="16" size="18" autocomplete="off" placeholder="Case sensitive password"/>
+                                                </li>
+                                                
+                                                
+                                                
+                                                <li class="login_button">
+                                                       <span class="button">
+                                                           <input type="submit" id="login-btn"	 name="Login" value="Login"/>
+                                                       </span>
+                                                </li>
+                                                
+                                                <li class="forgot_password hide">
+                                                	
+                                                   		
+														<a href="/afr/ibank/ng/foa/ral_tnc.htm?t=23-1-EEAB9D8B418B3BDA0045C7AD51100A0A&a=doInitForgotUsrNamePasswd">
+															Forgot Username / Password?
+														</a>
+                                                   	
+                                                   	
+                                                   	
+                                                </li>
+                                                
+                                                <li class="security_tips hide">
+                                                	<a href="http://www.standardchartered.com/en/online-banking/security/tips_secure_online_banking.html"
+																						target="_scbtab">Security Tips</a>
+                                                </li>
+                                                <li class="security_tips">
+                                                	<div class="sc-g">
+                                              			<div class="sc-u-1-2 text-align-left">
+                                              				
+                                                   		
+																												<a href="/afr/ibank/ng/foa/ral_tnc.htm?t=23-2-EEAB9D8B418B3BDA0045C7AD51100A0A&a=doInitForgotUsrNamePasswd">
+																													Forgot Username / Password?
+																												</a>
+														                                                   	
+														                                                   	
+														                                                   	
+														                                                   	
+                                              			</div>
+                                              			<div class="sc-u-1-2 text-align-right">
+                                              				<a href="https://www.sc.com/global/security-tips/" target="_scbtab" class="security-tip-link">Security Tips</a>
+                                              			</div>
+                                                	</div>
+                                                </li>
+                                                
+											</ul>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<input type="hidden" name="spring-security-redirect"
+					value="/transaction_monitor_login.htm?r=82773DDE-FE5D-578D-916C-CD5E4DB9B23B" />
+			<input type="hidden" name="t" value="23-0-EEAB9D8B418B3BDA0045C7AD51100A0A">
+</form>
+
+	<!-- START OF INLINE ERROR CONTAINER -->
+
+		
+			<!-- END OF INLINE ERROR CONTAINER -->			
+		
+	</div>
+<!-- END OF LOGIN FORM -->
+
+
+			
+
+		
+
+
+
+			
+
+
+		
+		<div class="row mainContainer sign-up-container">
+			
+		   
+             
+				
+				
+						<h1>
+                 <span>
+			                	Apply/Register
+			                </span>
+			           </h1>
+					<div class="sc-block text-align-center">
+                                   
+                                       <input type="submit" class="btn ghost mid-large" name="Login" value="APPLY FOR A QUICK ACCOUNT"  
+							onclick="window.open('https://www.sc.com/ng/save/accounts/apply/')" style="height: 90px; width:662px; background-color: #02B8F8;border: 0px" 
+							onmouseover="this.style.backgroundColor = '#0285D4'" onmouseout="this.style.backgroundColor = '#02B8F8'" />
+                                   
+                            </div>
+				
+				
+				
+					<div class="options">
+						
+							
+								<div class="options-item"  onclick="window.location='/afr/ibank/ng/foa/ral_tnc.htm?t=23-3-EEAB9D8B418B3BDA0045C7AD51100A0A'">	
+													
+							
+						
+							<div class="item-details">
+								<div class="sc-u-3-4 desc">
+									<span>
+										
+											
+											
+											
+											
+											
+											
+												register for online banking with SC ATM/DEBIT CARD or CREDIT CARD
+											
+											
+											
+											
+											
+											
+										
+									</span>
+								</div>
+								<div class="sc-u-1-4 icon">
+									<img src="/afr/foa/theme/default/images/icon/GreenCard.png" border="0" style="" />
+								</div>
+							</div>
+						</div>
+						
+						<div class="options-item" onclick="window.location='/afr/ibank/ng/foa/ral_tnc.htm?t=23-3-EEAB9D8B418B3BDA0045C7AD51100A0A&a=doInitFirstTimeLogin'">
+							<div class="item-details">
+								<div class="sc-u-3-4 desc">
+								
+									
+									<span>
+										register for online banking with temporary ID and SMS PIN
+										 </span>
+									
+									
+								
+								</div>
+								<div class="sc-u-1-4 icon">
+									<img src="/afr/foa/theme/default/images/icon/GreenPhone.png" border="0" style="" />
+								</div>
+							</div>
+						</div>
+						 
+					</div>
+		    	
+		    	<div class="notes">
+		    		<span>
+		    			Please ensure your <em>mobile number</em> is registered with us to receive an SMS with a password.
+		    		</span>
+		    	 </div>
+		    	
+		</div>
+		
+		<div class="row mainContainer additional-container">
+				<h1>
+					No card with us?
+				</h1>
+			    <div class="notes sc-left-padding-large sc-right-padding-large" style="width:600px;margin: 0 auto;margin-bottom: 30px;">
+			    	To register for Online and Mobile Banking, please visit one of our branches to apply for ATM / Debit / Credit Card.
+				</div>
+
+					<div class="sc-block text-align-center">
+				<input class="btn ghost mid-small" type="button" value="Find a branch" onclick="window.open('https://www.sc.com/ng/atms.html')"/>
+					
+					</div>
+						 
+				
+			</div>
+
+		
+			<!--<div class="row mainContainer additional-container hide">
+				<h1>
+					<a href="/afr/ibank/ng/foa/ral_tnc.htm?t=23-3-EEAB9D8B418B3BDA0045C7AD51100A0A&a=doInitFirstTimeLogin" > 
+						Register Using SMS PIN
+					</a>
+				</h1>
+			    <div class="notes">
+			    	<a href="/afr/ibank/ng/foa/ral_tnc.htm?t=23-3-EEAB9D8B418B3BDA0045C7AD51100A0A&a=doInitFirstTimeLogin">
+						Click here
+					</a> 
+					if you have received a temporary ID via email and a temporary password via SMS
+				</div>
+			</div>-->
+		
+		
+		<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "/WEB/INF/xhtml1-strict.dtd">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+    
+    
+
+
+
+
+
+
+<div class="footer">
+	<div class="footer_wrapper">
+		<div class="row965">
+			<div class="footerDetails row">
+			
+				<div class="footer-block" >
+					
+						<div class=" sc-live-container">
+							
+							
+	
+							<div class="apple-store-badge" onclick="window.open('https://itunes.apple.com/us/app/sc-mobile-nigeria/id650746202?ls=1&mt=8');"></div>
+	
+							<div class="google-play-badge" onclick="window.open('https://play.google.com/store/apps/details?id=com.sc.breezenigeria.banking');"></div>
+						</div>
+					
+					
+					
+					
+					
+					
+
+				</div>
+				
+				<div class="footer-block">
+				
+				</div>
+				
+				<div class="footer-block">
+					
+					
+					
+						<a target="_blank" href='https://www.sc.com/ng/help-centre/faqs-ways-to-bank.html' >
+							<span class="external-link">
+								FAQs
+							</span> 
+						</a>
+					
+					<a target="_blank" href='https://www.sc.com/global/security-tips/' >
+						<span class="external-link">
+							Online security
+						</span> 
+					</a>
+					
+						<a target="_blank" href='https://www.sc.com/ng/ways-to-bank/ ' >
+							<span class="external-link">
+								Ways to bank
+							</span> 
+						</a>
+					
+					<a target="_blank" href='https://www.sc.com/ng/help-centre/download-centre.html' >
+						<span class="external-link">
+							Download Center
+						</span> 
+					</a>
+					<a target="_blank" href='https://www.sc.com/ng/website-privacy-statement.html' >
+						<span class="external-link">
+							Privacy Statement
+						</span> 
+					</a>
+					<a target="_blank" href='https://www.sc.com/ng/terms-conditions.html' >
+						<span class="external-link">
+							Terms and Conditions
+						</span>
+					</a>
+				</div>
+				
+				<div class="footer-block">
+					<a href='#' class="small-text get-in-touch">
+						Get in touch
+					</a>
+					<div class="contact-text" style="word-wrap: break-word;
+    font-size: 20px !important;
+    line-height: 1.3em;
+    font-family: 'SC Sans Web Ultra Thin', sans-serif;">
+						+ 234 1 270 4611-4 
+					</div>
+
+					
+					
+					
+						<a href='mailto:clientcare.ng@sc.com ' class="contact-text">
+							
+							clientcare.ng@sc.com 
+						</a>
+					
+
+					<div class="sc-block">
+						&nbsp;
+					</div>
+
+					<a target="_blank" href='http://www.twitter.com/stanchart' style="float: left;">
+						<img src="/afr/foa/theme/default/images/footer/Twitter.png" 
+							onmouseover="this.src='/afr/foa/theme/default/images/footer/Twitter-o.png'"
+							onmouseout="this.src='/afr/foa/theme/default/images/footer/Twitter.png'" 
+							style="margin-right: 5px;"/>
+					</a>
+					<a target="_blank" href='http://www.facebook.com/standardcharteredNG' style="float: left;">
+						<img src="/afr/foa/theme/default/images/footer/Facebook.png" 
+							onmouseover="this.src='/afr/foa/theme/default/images/footer/Facebook-o.png'"
+							onmouseout="this.src='/afr/foa/theme/default/images/footer/Facebook.png'" 
+							style="margin-right: 5px;"/>
+					</a>
+					<a target="_blank" href='http://www.linkedin.com/company/standard-chartered-bank' style="float: left;">
+						<img src="/afr/foa/theme/default/images/footer/Linkedin.png" 
+							onmouseover="this.src='/afr/foa/theme/default/images/footer/Linkedin-o.png'"
+							onmouseout="this.src='/afr/foa/theme/default/images/footer/Linkedin.png'" 
+							style="margin-right: 5px;"/>
+					</a>
+				</div>
+				
+			</div>
+			
+			
+			<div class="footerDetails row row960" style="padding-top: 20px;padding-bottom: 20px; margin-right: 6px;">
+				<div class="sc-g">
+					<div class="sc-u-3-4">
+						<div class="copyright">
+							<div class="footer-hr"></div>
+							<span class="footer-copyright">
+								&copy; Standard Chartered 2016
+							</span>
+							<span class="footer-copyright" style="margin-left: 10px; letter-spacing:.8px;border-left: 1px solid #8c8c8c">
+								<a href="#" class="menu-title" style="color: #8c8c8c !important;font-size: 14px; font-weight: bold; text-align: right; width: 100%;"><span style="margin: 0 10px;"> 
+									<a href="http://sc.com/ng" target="_blank" style="margin-right: 20px">
+										Nigeria
+									</a>
+								</span></a>
+								
+							</span>
+							<span class="footer-copyright" style="border-left: 1px solid #8c8c8c">
+										
+							</span>
+						</div>
+							
+					</div>
+					<div class="sc-u-1-4">
+						<div class="sitemap">
+							<a target="_blank" href='https://www.sc.com/ng/sitemap.html' style="font-size: 12px;">
+								<span class="external-link">
+									SITEMAP
+								</span>
+								
+								
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="/afr/js/footer.js?2412091320"></script>    
+
+
+<div class="hide">
+			<img src="/afr/foa/theme/default/images/footer/Twitter-o.png" />
+			<img src="/afr/foa/theme/default/images/footer/Facebook-o.png" />
+			<img src="/afr/foa/theme/default/images/footer/Linkedin-o.png" />
+			<img src="/afr/foa/theme/default/images/footer/flag_hover.png" />
+</div>
+
+
+
+<div id="browser-warning" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+
+
+        <div class="sc-block text-center">
+			<div class="sc-block text-align-center"><img class="icon-error" src="/afr/foa/theme/default/images/icon/Icon_Error.png"></div>
+			<div class="notes text-align-center">
+
+				
+				<p>We notice you're using an older browser. As we modernise our banking experience, we are aware of some hiccups with older browsers. Please bear with us. We would recommend you upgrade to a more secure, modern browser.</p>
+
+				
+				
+				<div class="sc-block sc-size-450 sc-horizontal-padding-medium " style="margin: 0 auto;">
+					<div class="sc-g">
+					    <div class="sc-u-1-4">
+					    	<a href="https://www.google.com/chrome/browser/desktop/" target="_blank">
+								<div>
+									<img src="/afr/foa/theme/default/images/upgrade/icon_chrome@1x.png"/>
+								</div>
+								Chrome
+							</a>
+					    </div>
+					    <div class="sc-u-1-4">
+					    	<a href="https://www.mozilla.org/firefox/products/" target="_blank">
+								<div>
+									<img src="/afr/foa/theme/default/images/upgrade/icon_ffox@1x.png"/>
+								</div>
+								Firefox
+							</a>
+					    </div>
+					    <div class="sc-u-1-4">
+					    	<a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">
+							<div>
+								<img src="/afr/foa/theme/default/images/upgrade/icon_ie@1x.png"/>
+							</div>
+							Explorer
+							</a>
+					    </div>
+					    <div class="sc-u-1-4">
+					    	<a href="http://www.apple.com/safari/" target="_blank">
+							<div>
+								<img src="/afr/foa/theme/default/images/upgrade/icon_safari@1x.png"/>
+							</div>
+							Safari
+							</a>
+					    </div>
+					</div>
+				</div>
+
+			
+			</div>
+		</div>
+
+    </div>
+</div>
+
+<script type="text/javascript"  src="/ZFQarg/q8lNP/STyXY/iNmw/it3LVfrNODbcbY/QRgwWis/QmB/wYC0pWQoB"></script></body>
+
+</html>
+

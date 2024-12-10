@@ -1,0 +1,100 @@
+/*#logout-page{
+    letter-spacing: 0.033em;
+    padding-bottom: 200px;
+    div.row965 {
+        max-width: initial;
+    }
+    .mainContainer {
+        background-color: none;
+        padding-bottom: 0;
+    }
+    .header {
+        background: #f9f9f9;
+        height: 52px; 
+        margin-bottom: 0; 
+        .header_wrapper {
+            background: none;
+            .nav a {
+                padding: 0;
+                margin: 0;
+            }
+            a:nth-child(1) {
+                display: block;
+            }
+            .nav {
+                height: auto;
+                padding: 0;
+                padding: 17px 171px 0 0;
+                font-weight: initial;
+                letter-spacing: initial;
+                letter-spacing: 0em;
+                background:none;
+                width: auto;
+                a {
+                    font-size: .875em;
+                }
+
+            }
+        }
+        .pre-login-header
+            {
+            .scbLogo {
+                padding: 0;
+                margin: 0;
+                     img{
+                        margin: 0;
+                        padding: 0;
+                        height: 29px;
+                        padding: 9px 0 0 171px;
+                    }
+                }
+            } 
+        .nav a{
+          color:#555e6f;
+        } 
+    }
+    .footer {
+        margin-top: 0px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    .footer .row965 {
+      max-width: 940px;
+    }
+    .tbl_info_blue{
+        display:block;
+    }
+    .tbl_listing td{
+        background: $table-header-background-color;
+    }
+    .tbl_listing{
+              
+            tr:nth-child(1){
+                background: none; 
+                th{
+                 background: none;  
+                 border: none; 
+                }
+                
+                th {
+                    background: $table-header-background-color;
+                    border: none;
+                    text-align: left;
+                    border-bottom: $table-header-border;
+                    font-size: 16px;
+                }
+            }
+             tr:nth-child(2){
+
+                td{
+                    
+                    background: #fff!important;
+                    @include table_data();
+                    
+                }
+            }  
+    }
+  
+
+}*/

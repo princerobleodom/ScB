@@ -1,0 +1,92 @@
+
+/** Utilities for SCB **/
+.hide {
+	display: none;
+}
+
+.helper_text, .helper-text {
+	color: $helper-color !important;
+	font-size: 12px !important;
+}
+
+.header-helper-text, .header-helper-text * {
+	color: $normal-font-color !important;
+	font-size: 14px !important;
+}
+
+.text-align-right{
+	text-align: right !important;
+}
+
+.text-align-left{
+	text-align: left !important;
+}
+
+.text-align-center{
+	text-align: center !important;
+}
+
+.dark-color *, .dark-color {
+	color: #333 !important;
+
+}
+
+.sc {
+	&-grey-color, &-grey-color *{
+		color: #888 !important;
+	}
+
+
+	&-currency-code {
+		@extend .sc-tbl__label;
+	}
+}
+
+
+/**
+@todo css - fix the get exchange rate to normal
+
+*/
+
+.txt_info, .txt_info * {
+	font-weight: normal;
+}
+
+
+.sc{
+	&-data-col {
+		display: table-cell; 
+		vertical-align: 
+		middle;height: 56px;
+	}
+
+	&-padding-left{
+		padding-left: $sc-padding;
+	}
+}
+
+
+
+
+
+/**
+ * Background Colors
+ */
+
+
+.sc {
+	&-bg-white{
+		background-color: #fff!important;
+	}
+}
+
+p {
+	@extend .sc-block;
+}
+
+br {
+	display: block;
+	margin: 10px 0;
+}
+
+

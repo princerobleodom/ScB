@@ -1,0 +1,79 @@
+.sc{
+	&-size-small {
+		width: 24.99%!important;
+	}
+
+	&-size-medium-small {
+		width: 34.99%!important;
+	}
+
+	&-size-medium {
+		width: 49.99%!important;
+	}
+	&-size-max, &-size-large {
+		width: 99.99%!important;
+	}
+
+
+	&-size-100 {
+		@include size(100px);
+	}
+
+	&-size-200 {
+		@include size(200px);
+	}
+
+	&-size-250 {
+		@include size(250px);
+	}
+
+	&-size-300 {
+		@include size(300px);
+	}
+
+	&-size-350 {
+		@include size(350px);
+	}
+
+	&-size-400 {
+		@include size(400px);
+	}
+
+	&-size-450 {
+		@include size(450px);
+	}
+
+	&-size-half {
+		@include size(49.99%);
+	}
+
+	&-size-full {
+		@include size(99.99%);
+	}
+
+	&-font-large {
+		font-size: 18px !important;
+	}
+
+	&-font-normal {
+		font-size: 16px !important;
+	}
+
+	&-font-smaller {
+		font-size: 14px !important;
+	}
+
+	&-font-smallest {
+		font-size: 12px !important;
+	}
+}
+
+
+
+.sc-{
+	&-cursor{
+		&-default{
+			cursor: default !important;
+		}
+	}
+}
