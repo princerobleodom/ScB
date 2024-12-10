@@ -1,0 +1,394 @@
+.onetrust-pc-dark-filter {
+    background: 0 0 !important;
+    position: absolute !important;
+    visibility: hidden
+}
+
+#onetrust-consent-sdk .ot-pc-refuse-all-handler,
+#onetrust-consent-sdk .save-preference-btn-handler,
+#onetrust-pc-sdk #accept-recommended-btn-handler {
+    border-radius: 50px !important
+}
+
+#onetrust-consent-sdk .save-preference-btn-handler,
+#onetrust-pc-sdk #accept-recommended-btn-handler {
+    background-color: #008738 !important;
+    border-color: #008738 !important
+}
+
+#onetrust-consent-sdk .save-preference-btn-handler:hover,
+#onetrust-pc-sdk #accept-recommended-btn-handler:focus,
+#onetrust-pc-sdk #accept-recommended-btn-handler:hover {
+    background-color: #007932 !important;
+    opacity: 1 !important
+}
+
+#onetrust-consent-sdk .ot-pc-refuse-all-handler {
+    background-color: transparent !important;
+    border-color: #000 !important;
+    color: #000 !important
+}
+
+#onetrust-consent-sdk .ot-pc-refuse-all-handler:hover {
+    background-color: transparent !important;
+    border-color: #008738 !important;
+    color: #008738 !important;
+    opacity: 1 !important
+}
+
+#onetrust-pc-sdk .ot-pc-footer-logo {
+    display: none !important
+}
+
+#onetrust-pc-sdk .ot-switch-nob {
+    background-color: #b7b7b7 !important;
+    border: 0 !important
+}
+
+#onetrust-pc-sdk .ot-switch-nob:before {
+    background-color: #fff !important;
+    left: 3px !important;
+    bottom: 2px !important
+}
+
+#onetrust-pc-sdk .ot-tgl input:checked+.ot-switch .ot-switch-nob {
+    background-color: #0c77b9 !important;
+    border: 0 !important
+}
+
+#onetrust-pc-sdk .ot-tgl input:checked+.ot-switch .ot-switch-nob:before {
+    background-color: #fff !important;
+    left: 1px !important
+}
+
+#onetrust-pc-sdk .ot-always-active {
+    color: #0c77b9 !important
+}
+
+#ot-category-title,
+#ot-pc-desc,
+#ot-pc-title,
+.ot-category-desc {
+    color: #000 !important
+}
+
+#onetrust-pc-sdk .category-host-list-handler,
+#onetrust-pc-sdk .privacy-notice-link {
+    color: #008738 !important
+}
+
+#onetrust-pc-sdk.otPcPanel.ot-animated {
+    -webkit-animation-duration: .5s !important;
+    animation-duration: .5s !important
+}
+
+#onetrust-pc-sdk .ot-accordion-layout.ot-cat-item {
+    border: 1px solid #e1e1e1 !important;
+    margin-top: 4px !important
+}
+
+#onetrust-consent-sdk #onetrust-pc-sdk .ot-acc-grpcntr.ot-acc-txt,
+#onetrust-consent-sdk #onetrust-pc-sdk .ot-acc-txt .ot-subgrp-tgl .ot-switch.ot-toggle {
+    background-color: #fff !important
+}
+
+.ot-cat-header {
+    color: #0c77b9 !important
+}
+
+#onetrust-pc-sdk {
+    overflow: visible !important;
+    right: 0 !important;
+    margin: 0 auto !important
+}
+
+.ot-pc-header .ot-close-icon:hover {
+    opacity: 1 !important
+}
+
+.ot-pc-header .ot-close-icon {
+    top: 7px !important;
+    right: 8px !important;
+    display: none !important
+}
+
+#onetrust-pc-sdk .ot-btn-container {
+    text-align: center !important
+}
+
+#onetrust-pc-sdk.otPcCenter {
+    top: 50% !important;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
+}
+
+#onetrust-consent-sdk #onetrust-banner-sdk {
+    background-color: #fff !important
+}
+
+#onetrust-banner-sdk :focus,
+#onetrust-banner-sdk:focus,
+#onetrust-pc-sdk .ot-tgl input:focus+.ot-switch,
+#onetrust-pc-sdk :focus {
+    outline: 0 !important
+}
+
+#onetrust-consent-sdk #onetrust-policy-text {
+    color: #000 !important
+}
+
+#onetrust-consent-sdk #onetrust-policy-text a {
+    color: #008738 !important;
+    text-decoration: none !important
+}
+
+#onetrust-consent-sdk #onetrust-pc-btn-handler {
+    color: #000 !important;
+    text-decoration: none !important;
+    min-width: 125px !important;
+    border: 1px solid #000 !important;
+    border-radius: 50px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    margin-bottom: 12px !important;
+    background-color: transparent !important;
+    opacity: 1 !important
+}
+
+#onetrust-consent-sdk #onetrust-pc-btn-handler:focus,
+#onetrust-consent-sdk #onetrust-pc-btn-handler:hover {
+    color: #007932 !important;
+    border-color: #007932 !important;
+    opacity: 1 !important
+}
+
+#onetrust-consent-sdk #onetrust-accept-btn-handler,
+#onetrust-consent-sdk #onetrust-reject-all-handler {
+    border-radius: 50px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    margin-bottom: 12px !important
+}
+
+#onetrust-consent-sdk #onetrust-accept-btn-handler {
+    background-color: #008738 !important;
+    border-color: #008738 !important
+}
+
+#onetrust-consent-sdk #onetrust-accept-btn-handler:hover {
+    background-color: #007932 !important;
+    opacity: 1 !important
+}
+
+#onetrust-consent-sdk #onetrust-reject-all-handler {
+    background-color: transparent !important;
+    border-color: #000 !important;
+    color: #000 !important
+}
+
+#onetrust-consent-sdk #onetrust-reject-all-handler:hover {
+    background-color: transparent !important;
+    border-color: #008738 !important;
+    color: #008738 !important;
+    opacity: 1 !important
+}
+
+div#ot-pc-desc {
+    display: none !important
+}
+
+#ot-category-title:empty {
+    display: none
+}
+
+#onetrust-pc-sdk #ot-pc-content {
+    top: 100px !important
+}
+
+#onetrust-pc-sdk .ot-pc-header {
+    height: auto !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important
+}
+
+#onetrust-pc-sdk .ot-pc-logo {
+    height: 60px !important;
+    width: 132px !important;
+    background-image: url("https://av.sc.com/assets/global/images/components/header/standard-chartered-logo.svg") !important
+}
+
+.ot-cat-item:not(.ot-always-active-group) .ot-cat-header {
+    position: relative !important;
+    top: 4px !important
+}
+
+.ot-floating-button__back,
+.ot-floating-button__front {
+    display: none !important
+}
+
+#onetrust-banner-sdk {
+    -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, .5) !important;
+    box-shadow: 0 0 18px rgba(0, 0, 0, .5) !important
+}
+
+.ot-category-desc {
+    width: calc(100% - 50px) !important
+}
+
+#onetrust-pc-sdk .ot-floating-button__close {
+    width: 34px !important;
+    height: 34px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    background-color: #000 !important;
+    position: absolute;
+    right: -17px;
+    top: -16px;
+    border: 2px solid #fff !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+#onetrust-pc-sdk .ot-floating-button__close svg {
+    width: 12px !important;
+    height: 12px !important
+}
+
+#ot-sdk-btn-floating.ot-floating-button {
+    display: none !important
+}
+
+.onetrust-pc-dark-filter:not([style]) {
+    background: rgba(0, 0, 0, .87) !important;
+    position: fixed !important;
+    visibility: visible !important
+}
+
+#onetrust-banner-sdk .onetrust-close-btn-ui {
+    display: none !important
+}
+
+.onetrust-pc-dark-filter.onetrust-overlay {
+    background: rgba(0, 0, 0, .5) !important;
+    position: fixed !important;
+    visibility: visible !important
+}
+
+[dir=rtl]#onetrust-pc-sdk .ot-switch-nob:before {
+    right: 3px !important;
+    left: auto !important
+}
+
+[dir=rtl]#onetrust-pc-sdk .ot-tgl input:checked+.ot-switch .ot-switch-nob:before {
+    right: 1px !important;
+    left: auto !important
+}
+
+[dir=rtl]#onetrust-pc-sdk #ot-pc-content {
+    padding-left: 20px;
+    margin: 1px 3px 0 30px
+}
+
+[dir=rtl]#onetrust-pc-sdk .ot-floating-button__close {
+    right: auto;
+    left: -17px
+}
+
+@media only screen and (min-width:890px) {
+    #onetrust-banner-sdk.ot-buttons-fw:not(.ot-iab-2) #onetrust-button-group button {
+        width: auto !important
+    }
+}
+
+@media (min-width:768px) {
+    #onetrust-pc-sdk #ot-pc-content {
+        width: calc(100% - 50px) !important;
+        padding-right: 18px !important;
+        padding-bottom: 20px !important
+    }
+    .ot-pc-header .ot-close-icon {
+        top: -18px !important;
+        right: -18px !important
+    }
+}
+
+@media (max-width:767px) {
+    #onetrust-pc-sdk .ot-pc-footer {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        width: calc(100% - 40px) !important;
+        background-color: #fff;
+        z-index: 5
+    }
+    #onetrust-pc-sdk.otPcCenter {
+        top: 0 !important;
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important
+    }
+    #onetrust-pc-sdk .ot-floating-button__close {
+        right: 16px;
+        top: 22px
+    }
+    #onetrust-pc-sdk .ot-pc-header {
+        padding: 10px 0 10px 10px !important
+    }
+    #onetrust-banner-sdk #onetrust-policy {
+        margin-top: 16px !important
+    }
+    #onetrust-consent-sdk #onetrust-policy-title {
+        margin-bottom: 8px !important;
+        display: inline-block !important
+    }
+    [dir=rtl]#onetrust-pc-sdk #ot-pc-content {
+        padding-left: 10px;
+        margin: 1px 10px 0 3px
+    }
+    [dir=rtl]#onetrust-pc-sdk .ot-pc-header {
+        padding: 10px 10px 10px 0 !important
+    }
+    [dir=rtl]#onetrust-pc-sdk .ot-floating-button__close {
+        left: 17px
+    }
+}
+
+@media (min-width:1280px) {
+    #onetrust-banner-sdk:not(.ot-iab-2).vertical-align-content #onetrust-button-group-parent {
+        text-align: right !important;
+        padding-right: 40px !important
+    }
+}
+
+@media (min-width:769px) {
+    #onetrust-banner-sdk #onetrust-button-group {
+        margin-right: auto !important
+    }
+}
+
+@media (min-width:1024px) and (max-width:1100px) {
+    #onetrust-banner-sdk:not(.ot-iab-2) #onetrust-button-group-parent {
+        width: 36% !important
+    }
+}
+
+@media screen and (min-width:0\0) {
+    .ot-sdk-container,
+    .ot-sdk-row {
+        overflow: hidden !important
+    }
+}
